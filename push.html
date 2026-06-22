@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Push Day — Monday</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <span class="nav-logo">MY FITNESS PLAN</span>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Overview</a>
+        <a href="push.html" class="nav-link push active">Push</a>
+        <a href="pull.html" class="nav-link pull">Pull</a>
+        <a href="legs.html" class="nav-link legs">Legs</a>
+        <a href="nutrition.html" class="nav-link">Nutrition</a>
+      </div>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">&#9776;</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-link">Overview</a>
+      <a href="push.html" class="mobile-link push active">Push — Monday</a>
+      <a href="pull.html" class="mobile-link pull">Pull — Tuesday</a>
+      <a href="legs.html" class="mobile-link legs">Legs — Wednesday</a>
+      <a href="nutrition.html" class="mobile-link">Nutrition</a>
+    </div>
+  </nav>
+
+  <header class="workout-hero workout-hero--push">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Monday · ~55 minutes</p>
+      <h1 class="hero-title">Push Day</h1>
+      <p class="hero-sub">Chest · Shoulders · Triceps</p>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="workout-intro">
+      <p>Start with the two heavy compound movements while you're fresh, then move into isolation work. Rest times matter — use them fully on the big lifts.</p>
+    </div>
+
+    <div class="exercise-list">
+
+      <div class="exercise">
+        <div class="exercise-header">
+          <div class="ex-left">
+            <span class="ex-num ex-num--push">1</span>
+            <div>
+              <h3 class="ex-name">Barbell bench press</h3>
+              <div class="ex-muscles">
+                <span class="muscle-tag">chest</span>
+                <span class="muscle-tag">front delt</span>
+                <span class="muscle-tag">tricep</span>
+              </div>
+            </div>
+          </div>
+          <div class="ex-sets-info">
+            <span class="ex-sets">4 × 6–8</span>
+            <span class="ex-rest">Rest 2–3 min</span>
+          </div>
+        </div>
+        <p class="ex-tip">Retract your shoulder blades and drive your feet into the floor. Lower the bar to your lower chest, touch lightly, and press up and back. Your primary compound lift — load it progressively every week.</p>
+        <div class="ex-tracker">
+          <label class="tracker-label">My current weight</label>
+          <div class="tracker-inputs">
+            <div class="tracker-field">
+              <input type="number" class="tracker-input" id="push-1-weight" placeholder="0" min="0" step="2.5" />
+              <span class="tracker-unit">kg</span>
+            </div>
+            <div class="tracker-field">
+              <input type="number" class="tracker-input" id="push-1-reps" placeholder="0" min="0" max="20" />
+              <span class="tracker-unit">reps</span>
+            </div>
+          </div>
+          <button class="save-btn" onclick="saveExercise('push-1')">Save</button>
+          <span class="save-confirm" id="push-1-confirm">Saved ✓</span>
+        </div>
+      </div>
+
+      <div class="exercise">
+        <div class="exercise-header">
+          <div class="ex-left">
+            <span class="ex-num ex-num--push">2</span>
+            <div>
+              <h3 class="ex-name">Incline dumbbell press</h3>
+              <div class="ex-muscles">
+                <span class="muscle-tag">upper chest</span>
+                <span class="muscle-tag">front delt</span>
+              </div>
+            </div>
+          </div>
+          <div class="ex-sets-info">
+            <span class="ex-sets">3 × 8–10</span>
+            <span class="ex-rest">Rest 90 sec</span>
+          </div>
+        </div>
+        <p class="ex-tip">Set bench to 30–45°. Keep elbows at 45° from your torso — this protects the shoulder and keeps tension on the upper chest.</p>
+        <div class="ex-tracker">
+          <label class="tracker-label">My current weight</label>
+          <div class="tracker-inputs">
+            <div class="tracker-field">
+              <input type="number" class="tracker-input" id="push-2-weight" placeholder="0" min="0" step="2.5" />
+              <span class="tracker-unit">kg</span>
+            </div>
+            <div class="tracker-field">
+              <input type="number" class="tracker-input" id="push-2-reps" placeholder="0" min="0" max="20" />
+              <span class="tracker-unit">reps</span>
+            </div>
+          </div>
+          <button class="save-btn" onclick="saveExercise('push-2')">Save</button>
+          <span class="save-confirm" id="push-2-confirm">Saved ✓</span>
+        </div>
+      </div>
+
+      <div class="exercise">
+        <div class="exercise-header">
+          <div class="ex-left">
+            <span class="ex-num ex-num--push">3</span>
+            <div>
+              <h3 class="ex-name">Arnold press</h3>
+              <div class="ex-muscles">
+                <span class="muscle-tag">all 3 delt heads</span>
+                <span class="muscle-tag">tricep</span>
+              </div>
+            </div>
+          </div>
+          <div class="ex-sets-info">
+            <span class="ex-sets">4 × 8–10</span>
+            <span class="ex-rest">Rest 2 min</span>
+          </div>
+        </div>
+        <p class="ex-tip">Start with palms facing you, rotate outward as you press overhead. The rotation hits all three shoulder heads in one movement.</p>
+        <div class="ex-tracker">
+          <label class="tracker-label">My current weight</label>
+          <div class="tracker-inputs">
+            <div class="tracker-field">
+              <input type="number" class="tracker-input" id="push-3-weight" placeholder="0" min="0" step="2.5" />
+              <span class="tracker-unit">kg</span>
+            </div>
+            <div class="tracker-field">
+              <input type="number" class="tracker-input" id="push-3-reps" placeholder="0" min="0" max="20" />
+              <span class="tracker-unit">reps</span>
+            </div>
+          </div>
+          <button class="save-btn" onclick="saveExercise('push-3')">Save</button>
+          <span class="save-confirm" id="push-3-confirm">Saved ✓</span>
+        </div>
+      </div>
+
+      <div class="exercise">
+        <div class="exercise-header">
+          <div class="ex-left">
+            <span class="ex-num ex-num--push">4</span>
+            <div>
+              <h3 class="ex-name">Lateral raises</h3>
+              <div class="ex-muscles">
+                <span class="muscle-tag">side delt</span>
+              </div>
+            </div>
+          </div>
+          <div class="ex-sets-info">
+            <span class="ex-sets">3 × 12–15</span>
+            <span class="ex-rest">Rest 60 sec</span>
+          </div>
+        </div>
+        <p class="ex-tip">Slight forward lean, lead with your elbows not your hands. Control the descent slowly — 2–3 seconds down for maximum delt stimulus.</p>
+        <div class="ex-tracker">
+          <label class="tracker-label">My current weight</label>
+          <div class="tracker-inputs">
+            <div class="tracker-field">
+              <input type="number" class="tracker-input" id="push-4-weight" placeholder="0" min="0" step="2.5" />
+              <span class="tracker-unit">kg</span>
+            </div>
+            <div class="tracker-field">
+              <input type="number" class="tracker-input" id="push-4-reps" placeholder="0" min="0" max="20" />
+              <span class="tracker-unit">reps</span>
+            </div>
+          </div>
+          <button class="save-btn" onclick="saveExercise('push-4')">Save</button>
+          <span class="save-confirm" id="push-4-confirm">Saved ✓</span>
+        </div>
+      </div>
+
+      <div class="exercise">
+        <div class="exercise-header">
+          <div class="ex-left">
+            <span class="ex-num ex-num--push">5</span>
+            <div>
+              <h3 class="ex-name">Cable fly or pec deck</h3>
+              <div class="ex-muscles">
+                <span class="muscle-tag">chest</span>
+              </div>
+            </div>
+          </div>
+          <div class="ex-sets-info">
+            <span class="ex-sets">3 × 12–15</span>
+            <span class="ex-rest">Rest 60 sec</span>
+          </div>
+        </div>
+        <p class="ex-tip">Keep a slight bend in elbows throughout. Squeeze hard at the point of peak contraction — pause for 1 second. Pure chest isolation.</p>
+        <div class="ex-tracker">
+          <label class="tracker-label">My current weight</label>
+          <div class="tracker-inputs">
+            <div class="tracker-field">
+              <input type="number" class="tracker-input" id="push-5-weight" placeholder="0" min="0" step="2.5" />
+              <span class="tracker-unit">kg</span>
+            </div>
+            <div class="tracker-field">
+              <input type="number" class="tracker-input" id="push-5-reps" placeholder="0" min="0" max="20" />
+              <span class="tracker-unit">reps</span>
+            </div>
+          </div>
+          <button class="save-btn" onclick="saveExercise('push-5')">Save</button>
+          <span class="save-confirm" id="push-5-confirm">Saved ✓</span>
+        </div>
+      </div>
+
+      <div class="exercise">
+        <div class="exercise-header">
+          <div class="ex-left">
+            <span class="ex-num ex-num--push">6</span>
+            <div>
+              <h3 class="ex-name">Tricep rope pushdown</h3>
+              <div class="ex-muscles">
+                <span class="muscle-tag">tricep</span>
+              </div>
+            </div>
+          </div>
+          <div class="ex-sets-info">
+            <span class="ex-sets">3 × 12–15</span>
+            <span class="ex-rest">Rest 60 sec</span>
+          </div>
+        </div>
+        <p class="ex-tip">Elbows pinned to sides throughout. Spread the rope apart at the bottom of the movement and fully extend. Don't let elbows flare.</p>
+        <div class="ex-tracker">
+          <label class="tracker-label">My current weight</label>
+          <div class="tracker-inputs">
+            <div class="tracker-field">
+              <input type="number" class="tracker-input" id="push-6-weight" placeholder="0" min="0" step="2.5" />
+              <span class="tracker-unit">kg</span>
+            </div>
+            <div class="tracker-field">
+              <input type="number" class="tracker-input" id="push-6-reps" placeholder="0" min="0" max="20" />
+              <span class="tracker-unit">reps</span>
+            </div>
+          </div>
+          <button class="save-btn" onclick="saveExercise('push-6')">Save</button>
+          <span class="save-confirm" id="push-6-confirm">Saved ✓</span>
+        </div>
+      </div>
+
+      <div class="exercise">
+        <div class="exercise-header">
+          <div class="ex-left">
+            <span class="ex-num ex-num--push">7</span>
+            <div>
+              <h3 class="ex-name">Overhead tricep extension</h3>
+              <div class="ex-muscles">
+                <span class="muscle-tag">tricep long head</span>
+              </div>
+            </div>
+          </div>
+          <div class="ex-sets-info">
+            <span class="ex-sets">3 × 10–12</span>
+            <span class="ex-rest">Rest 60 sec</span>
+          </div>
+        </div>
+        <p class="ex-tip">Keep elbows pointing forward, lower the dumbbell slowly behind your head. The stretch on the long head is key — don't rush the eccentric.</p>
+        <div class="ex-tracker">
+          <label class="tracker-label">My current weight</label>
+          <div class="tracker-inputs">
+            <div class="tracker-field">
+              <input type="number" class="tracker-input" id="push-7-weight" placeholder="0" min="0" step="2.5" />
+              <span class="tracker-unit">kg</span>
+            </div>
+            <div class="tracker-field">
+              <input type="number" class="tracker-input" id="push-7-reps" placeholder="0" min="0" max="20" />
+              <span class="tracker-unit">reps</span>
+            </div>
+          </div>
+          <button class="save-btn" onclick="saveExercise('push-7')">Save</button>
+          <span class="save-confirm" id="push-7-confirm">Saved ✓</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="workout-nav">
+      <a href="index.html" class="wn-btn wn-btn--secondary">← Overview</a>
+      <a href="pull.html" class="wn-btn wn-btn--pull">Pull day →</a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>Built for May 2027 · Track your lifts, hit your macros, trust the process.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

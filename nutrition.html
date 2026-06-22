@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nutrition Plan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <span class="nav-logo">MY FITNESS PLAN</span>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Overview</a>
+        <a href="push.html" class="nav-link push">Push</a>
+        <a href="pull.html" class="nav-link pull">Pull</a>
+        <a href="legs.html" class="nav-link legs">Legs</a>
+        <a href="nutrition.html" class="nav-link active">Nutrition</a>
+      </div>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">&#9776;</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-link">Overview</a>
+      <a href="push.html" class="mobile-link push">Push — Monday</a>
+      <a href="pull.html" class="mobile-link pull">Pull — Tuesday</a>
+      <a href="legs.html" class="mobile-link legs">Legs — Wednesday</a>
+      <a href="nutrition.html" class="mobile-link active">Nutrition</a>
+    </div>
+  </nav>
+
+  <header class="workout-hero workout-hero--nutrition">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Body recomposition phase</p>
+      <h1 class="hero-title">Nutrition</h1>
+      <p class="hero-sub">2,200 kcal · 150g protein · 215g carbs · 75g fat</p>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="section">
+      <p class="section-eyebrow">Daily targets</p>
+      <h2 class="section-title">The hierarchy that matters</h2>
+      <div class="macro-grid">
+        <div class="macro-card macro-card--calories">
+          <span class="macro-rank">Priority 1</span>
+          <span class="macro-val">2,200</span>
+          <span class="macro-unit">kcal/day</span>
+          <p class="macro-desc">~400 kcal below your TDEE. The foundation of fat loss.</p>
+        </div>
+        <div class="macro-card macro-card--protein">
+          <span class="macro-rank">Priority 2</span>
+          <span class="macro-val">150g</span>
+          <span class="macro-unit">protein</span>
+          <p class="macro-desc">Non-negotiable. Hits first, every day. Protects and builds muscle.</p>
+        </div>
+        <div class="macro-card macro-card--carbs">
+          <span class="macro-rank">Priority 3</span>
+          <span class="macro-val">215g</span>
+          <span class="macro-unit">carbs</span>
+          <p class="macro-desc">Fuel for training. Flexible — can shift daily as long as calories and protein are hit.</p>
+        </div>
+        <div class="macro-card macro-card--fat">
+          <span class="macro-rank">Priority 3</span>
+          <span class="macro-val">75g</span>
+          <span class="macro-unit">fat</span>
+          <p class="macro-desc">Don't go below 50g. Hormones and recovery depend on adequate fat intake.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="section-eyebrow">Daily meal plan</p>
+      <h2 class="section-title">What to eat and when</h2>
+      <div class="meals">
+
+        <div class="meal">
+          <div class="meal-time">Breakfast</div>
+          <div class="meal-body">
+            <h4 class="meal-name">Overnight oats</h4>
+            <div class="meal-foods">
+              <div class="meal-food"><span>Oats (70g dry)</span><span class="food-macro">9P · 47C · 5F</span></div>
+              <div class="meal-food"><span>Greek yogurt full fat (200g)</span><span class="food-macro">20P · 8C · 10F</span></div>
+              <div class="meal-food"><span>Semi-skimmed milk (150ml)</span><span class="food-macro">5P · 7C · 3F</span></div>
+              <div class="meal-food"><span>Chia seeds (15g)</span><span class="food-macro">3P · 5C · 5F</span></div>
+              <div class="meal-food"><span>Mixed berries (80g)</span><span class="food-macro">1P · 10C · 0F</span></div>
+            </div>
+            <div class="meal-totals">~500 kcal · 38g protein</div>
+          </div>
+        </div>
+
+        <div class="meal">
+          <div class="meal-time">Mid-morning</div>
+          <div class="meal-body">
+            <h4 class="meal-name">Snack</h4>
+            <div class="meal-foods">
+              <div class="meal-food"><span>Cottage cheese (150g)</span><span class="food-macro">18P · 4C · 3F</span></div>
+              <div class="meal-food"><span>Rice cakes × 2</span><span class="food-macro">1P · 14C · 0F</span></div>
+            </div>
+            <div class="meal-totals">~200 kcal · 19g protein</div>
+          </div>
+        </div>
+
+        <div class="meal">
+          <div class="meal-time">Lunch</div>
+          <div class="meal-body">
+            <h4 class="meal-name">Chicken rice bowl</h4>
+            <div class="meal-foods">
+              <div class="meal-food"><span>Chicken breast (180g cooked)</span><span class="food-macro">41P · 0C · 4F</span></div>
+              <div class="meal-food"><span>Basmati rice (130g cooked)</span><span class="food-macro">3P · 35C · 1F</span></div>
+              <div class="meal-food"><span>Avocado (half)</span><span class="food-macro">1P · 4C · 12F</span></div>
+              <div class="meal-food"><span>Mixed salad + olive oil (1 tsp)</span><span class="food-macro">2P · 4C · 5F</span></div>
+            </div>
+            <div class="meal-totals">~570 kcal · 47g protein</div>
+          </div>
+        </div>
+
+        <div class="meal">
+          <div class="meal-time">Pre/post workout</div>
+          <div class="meal-body">
+            <h4 class="meal-name">Protein shake + banana</h4>
+            <div class="meal-foods">
+              <div class="meal-food"><span>Whey protein shake (1 scoop)</span><span class="food-macro">25P · 4C · 2F</span></div>
+              <div class="meal-food"><span>Banana (medium)</span><span class="food-macro">1P · 27C · 0F</span></div>
+            </div>
+            <div class="meal-totals">~230 kcal · 26g protein · take within 60 min of training</div>
+          </div>
+        </div>
+
+        <div class="meal">
+          <div class="meal-time">Dinner</div>
+          <div class="meal-body">
+            <h4 class="meal-name">Beef mince, peppers & rice</h4>
+            <div class="meal-foods">
+              <div class="meal-food"><span>Lean beef mince 5% fat (180g raw)</span><span class="food-macro">36P · 0C · 9F</span></div>
+              <div class="meal-food"><span>Basmati rice (150g cooked)</span><span class="food-macro">3P · 35C · 0F</span></div>
+              <div class="meal-food"><span>Mixed peppers (200g)</span><span class="food-macro">2P · 12C · 0F</span></div>
+              <div class="meal-food"><span>Chopped tomatoes (100g)</span><span class="food-macro">1P · 4C · 0F</span></div>
+              <div class="meal-food"><span>Olive oil (1 tsp) + spices</span><span class="food-macro">0P · 2C · 5F</span></div>
+            </div>
+            <div class="meal-totals">~530 kcal · 42g protein</div>
+          </div>
+        </div>
+
+        <div class="meal">
+          <div class="meal-time">Evening</div>
+          <div class="meal-body">
+            <h4 class="meal-name">Casein snack</h4>
+            <div class="meal-foods">
+              <div class="meal-food"><span>Casein or cottage cheese (150g)</span><span class="food-macro">18P · 5C · 2F</span></div>
+              <div class="meal-food"><span>Handful of almonds (15g)</span><span class="food-macro">3P · 1C · 9F</span></div>
+            </div>
+            <div class="meal-totals">~170 kcal · 21g protein · slow-digesting overnight</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="section-eyebrow">Key rules</p>
+      <h2 class="section-title">What to remember</h2>
+      <div class="rules">
+        <div class="rule">
+          <span class="rule-num">1</span>
+          <div>
+            <h4 class="rule-title">Protein first, always</h4>
+            <p class="rule-desc">Hit 140–150g protein before anything else. Once protein is covered, fill remaining calories however you like — including sweet treats.</p>
+          </div>
+        </div>
+        <div class="rule">
+          <span class="rule-num">2</span>
+          <div>
+            <h4 class="rule-title">Training vs rest days</h4>
+            <p class="rule-desc">On gym days eat 2,200 kcal and keep carbs around your workout. On rest days, drop the pre-workout banana and reduce rice slightly — around 1,950–2,000 kcal.</p>
+          </div>
+        </div>
+        <div class="rule">
+          <span class="rule-num">3</span>
+          <div>
+            <h4 class="rule-title">5,000 steps minimum</h4>
+            <p class="rule-desc">At 5,000 steps per day you're in the lightly active bracket — this is what your 2,200 kcal target is calibrated to. Push to 8–10k on rest days for accelerated fat loss.</p>
+          </div>
+        </div>
+        <div class="rule">
+          <span class="rule-num">4</span>
+          <div>
+            <h4 class="rule-title">Go for 5% fat beef mince</h4>
+            <p class="rule-desc">Specifically buy 5% fat mince, not standard 20% fat. The leaner option has significantly more protein per gram and far less fat — one of the best value protein sources available.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Built for May 2027 · Track your lifts, hit your macros, trust the process.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

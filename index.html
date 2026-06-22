@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Fitness Plan — May 2027</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <span class="nav-logo">MY FITNESS PLAN</span>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link active">Overview</a>
+        <a href="push.html" class="nav-link push">Push</a>
+        <a href="pull.html" class="nav-link pull">Pull</a>
+        <a href="legs.html" class="nav-link legs">Legs</a>
+        <a href="nutrition.html" class="nav-link">Nutrition</a>
+      </div>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">&#9776;</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-link active">Overview</a>
+      <a href="push.html" class="mobile-link push">Push — Monday</a>
+      <a href="pull.html" class="mobile-link pull">Pull — Tuesday</a>
+      <a href="legs.html" class="mobile-link legs">Legs — Wednesday</a>
+      <a href="nutrition.html" class="mobile-link">Nutrition</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">June 2026 → May 2027</p>
+      <h1 class="hero-title">Get into <em>great shape.</em></h1>
+      <p class="hero-sub">11 months. 4 phases. One goal.</p>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="hero-stat-val">78.1<span class="hero-stat-unit">kg</span></span>
+        <span class="hero-stat-label">Current weight</span>
+      </div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat">
+        <span class="hero-stat-val">20.1<span class="hero-stat-unit">%</span></span>
+        <span class="hero-stat-label">Current body fat</span>
+      </div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat">
+        <span class="hero-stat-val">12–14<span class="hero-stat-unit">%</span></span>
+        <span class="hero-stat-label">Target body fat</span>
+      </div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat">
+        <span class="hero-stat-val">3<span class="hero-stat-unit">x</span></span>
+        <span class="hero-stat-label">Gym sessions/week</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="section">
+      <p class="section-eyebrow">The plan</p>
+      <h2 class="section-title">4 phases to get you there</h2>
+      <div class="phases">
+
+        <div class="phase phase--current">
+          <div class="phase-top">
+            <div class="phase-num">01</div>
+            <span class="phase-tag phase-tag--recomp">Current phase</span>
+          </div>
+          <h3 class="phase-name">Body recomposition</h3>
+          <p class="phase-dates">June → September 2026 · 14 weeks</p>
+          <p class="phase-desc">Build the training habit, master form, and shed fat while maintaining muscle. Small deficit, high protein.</p>
+          <div class="phase-metrics">
+            <div class="phase-metric"><span class="pm-val">2,200</span><span class="pm-label">kcal/day</span></div>
+            <div class="phase-metric"><span class="pm-val">150g</span><span class="pm-label">protein</span></div>
+            <div class="phase-metric"><span class="pm-val">~3–4kg</span><span class="pm-label">fat loss</span></div>
+          </div>
+        </div>
+
+        <div class="phase">
+          <div class="phase-top">
+            <div class="phase-num">02</div>
+            <span class="phase-tag phase-tag--bulk">Up next</span>
+          </div>
+          <h3 class="phase-name">Lean bulk</h3>
+          <p class="phase-dates">October → January 2027 · 14 weeks</p>
+          <p class="phase-desc">Small calorie surplus to maximise muscle growth. Expect lifts to jump and your physique to fill out.</p>
+          <div class="phase-metrics">
+            <div class="phase-metric"><span class="pm-val">2,800</span><span class="pm-label">kcal/day</span></div>
+            <div class="phase-metric"><span class="pm-val">155g</span><span class="pm-label">protein</span></div>
+            <div class="phase-metric"><span class="pm-val">~2–3kg</span><span class="pm-label">muscle gain</span></div>
+          </div>
+        </div>
+
+        <div class="phase">
+          <div class="phase-top">
+            <div class="phase-num">03</div>
+            <span class="phase-tag phase-tag--cut">Coming soon</span>
+          </div>
+          <h3 class="phase-name">Cut</h3>
+          <p class="phase-dates">February → April 2027 · 10 weeks</p>
+          <p class="phase-desc">Strip fat to reveal the muscle built in the bulk. Higher protein, bigger deficit, more steps.</p>
+          <div class="phase-metrics">
+            <div class="phase-metric"><span class="pm-val">2,100</span><span class="pm-label">kcal/day</span></div>
+            <div class="phase-metric"><span class="pm-val">165g</span><span class="pm-label">protein</span></div>
+            <div class="phase-metric"><span class="pm-val">~3–4kg</span><span class="pm-label">fat loss</span></div>
+          </div>
+        </div>
+
+        <div class="phase">
+          <div class="phase-top">
+            <div class="phase-num">04</div>
+            <span class="phase-tag phase-tag--peak">Goal</span>
+          </div>
+          <h3 class="phase-name">Peak & maintain</h3>
+          <p class="phase-dates">May 2027 · 4 weeks</p>
+          <p class="phase-desc">Reverse diet to maintenance. Let the body settle. Enjoy the results.</p>
+          <div class="phase-metrics">
+            <div class="phase-metric"><span class="pm-val">2,450</span><span class="pm-label">kcal/day</span></div>
+            <div class="phase-metric"><span class="pm-val">~75kg</span><span class="pm-label">target weight</span></div>
+            <div class="phase-metric"><span class="pm-val">12–14%</span><span class="pm-label">body fat</span></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="section-eyebrow">Weekly schedule</p>
+      <h2 class="section-title">Train 3 days, recover smart</h2>
+      <div class="schedule">
+        <a href="push.html" class="schedule-day schedule-day--push">
+          <span class="sd-day">Monday</span>
+          <span class="sd-label">Push</span>
+          <span class="sd-focus">Chest · Shoulders · Triceps</span>
+          <span class="sd-arrow">→</span>
+        </a>
+        <a href="pull.html" class="schedule-day schedule-day--pull">
+          <span class="sd-day">Tuesday</span>
+          <span class="sd-label">Pull</span>
+          <span class="sd-focus">Back · Biceps · Rear Delts</span>
+          <span class="sd-arrow">→</span>
+        </a>
+        <a href="legs.html" class="schedule-day schedule-day--legs">
+          <span class="sd-day">Wednesday</span>
+          <span class="sd-label">Legs</span>
+          <span class="sd-focus">Quads · Hamstrings · Glutes · Calves</span>
+          <span class="sd-arrow">→</span>
+        </a>
+        <div class="schedule-day schedule-day--rest">
+          <span class="sd-day">Thursday</span>
+          <span class="sd-label">Rest</span>
+          <span class="sd-focus">Walk 5,000+ steps</span>
+        </div>
+        <div class="schedule-day schedule-day--rest">
+          <span class="sd-day">Friday</span>
+          <span class="sd-label">Rest</span>
+          <span class="sd-focus">Active recovery</span>
+        </div>
+        <div class="schedule-day schedule-day--rest">
+          <span class="sd-day">Saturday</span>
+          <span class="sd-label">Rest</span>
+          <span class="sd-focus">Walk 8–10k steps</span>
+        </div>
+        <div class="schedule-day schedule-day--rest">
+          <span class="sd-day">Sunday</span>
+          <span class="sd-label">Rest</span>
+          <span class="sd-focus">Meal prep day</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="section-eyebrow">Key rules</p>
+      <h2 class="section-title">What actually moves the needle</h2>
+      <div class="rules">
+        <div class="rule">
+          <span class="rule-num">1</span>
+          <div>
+            <h4 class="rule-title">Hit protein every single day</h4>
+            <p class="rule-desc">140–150g minimum. This protects muscle and drives growth regardless of which phase you're in. Calories can flex — protein cannot.</p>
+          </div>
+        </div>
+        <div class="rule">
+          <span class="rule-num">2</span>
+          <div>
+            <h4 class="rule-title">Progressive overload every session</h4>
+            <p class="rule-desc">Add 1–2 reps or a small weight increase every week. When you hit the top of the rep range, add weight and drop back down. Log everything.</p>
+          </div>
+        </div>
+        <div class="rule">
+          <span class="rule-num">3</span>
+          <div>
+            <h4 class="rule-title">Stay in the right calorie range</h4>
+            <p class="rule-desc">2,200 kcal during recomp. Once in the lean bulk, eat closer to 2,800. Adjust every 4 weeks based on how your body is responding.</p>
+          </div>
+        </div>
+        <div class="rule">
+          <span class="rule-num">4</span>
+          <div>
+            <h4 class="rule-title">Check in every 4 weeks</h4>
+            <p class="rule-desc">Same day, same time. Weight + waist measurement + optional photo. Trends over weeks matter — not daily fluctuations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Built for May 2027 · Track your lifts, hit your macros, trust the process.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

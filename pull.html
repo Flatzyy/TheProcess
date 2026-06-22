@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pull Day — Tuesday</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <span class="nav-logo">MY FITNESS PLAN</span>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Overview</a>
+        <a href="push.html" class="nav-link push">Push</a>
+        <a href="pull.html" class="nav-link pull active">Pull</a>
+        <a href="legs.html" class="nav-link legs">Legs</a>
+        <a href="nutrition.html" class="nav-link">Nutrition</a>
+      </div>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">&#9776;</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-link">Overview</a>
+      <a href="push.html" class="mobile-link push">Push — Monday</a>
+      <a href="pull.html" class="mobile-link pull active">Pull — Tuesday</a>
+      <a href="legs.html" class="mobile-link legs">Legs — Wednesday</a>
+      <a href="nutrition.html" class="mobile-link">Nutrition</a>
+    </div>
+  </nav>
+
+  <header class="workout-hero workout-hero--pull">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Tuesday · ~55 minutes</p>
+      <h1 class="hero-title">Pull Day</h1>
+      <p class="hero-sub">Back · Biceps · Rear Delts</p>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="workout-intro">
+      <p>Lead with the chest-supported row while your back is fresh. Face pulls are non-negotiable every session — they keep your shoulders healthy and balanced against all the pressing on Monday.</p>
+    </div>
+
+    <div class="exercise-list">
+
+      <div class="exercise">
+        <div class="exercise-header">
+          <div class="ex-left">
+            <span class="ex-num ex-num--pull">1</span>
+            <div>
+              <h3 class="ex-name">Chest-supported machine row</h3>
+              <div class="ex-muscles">
+                <span class="muscle-tag">mid back</span>
+                <span class="muscle-tag">lats</span>
+                <span class="muscle-tag">rear delt</span>
+                <span class="muscle-tag">bicep</span>
+              </div>
+            </div>
+          </div>
+          <div class="ex-sets-info">
+            <span class="ex-sets">4 × 8–10</span>
+            <span class="ex-rest">Rest 2 min</span>
+          </div>
+        </div>
+        <p class="ex-tip">Chest pinned to the pad throughout — this removes lower back fatigue and lets you load the back harder. Pull handles to lower chest and squeeze hard at the end.</p>
+        <div class="ex-tracker">
+          <label class="tracker-label">My current weight</label>
+          <div class="tracker-inputs">
+            <div class="tracker-field">
+              <input type="number" class="tracker-input" id="pull-1-weight" placeholder="0" min="0" step="2.5" />
+              <span class="tracker-unit">kg</span>
+            </div>
+            <div class="tracker-field">
+              <input type="number" class="tracker-input" id="pull-1-reps" placeholder="0" min="0" max="20" />
+              <span class="tracker-unit">reps</span>
+            </div>
+          </div>
+          <button class="save-btn save-btn--pull" onclick="saveExercise('pull-1')">Save</button>
+          <span class="save-confirm" id="pull-1-confirm">Saved ✓</span>
+        </div>
+      </div>
+
+      <div class="exercise">
+        <div class="exercise-header">
+          <div class="ex-left">
+            <span class="ex-num ex-num--pull">2</span>
+            <div>
+              <h3 class="ex-name">Pull-ups or lat pulldown</h3>
+              <div class="ex-muscles">
+                <span class="muscle-tag">lats</span>
+                <span class="muscle-tag">bicep</span>
+                <span class="muscle-tag">rear delt</span>
+              </div>
+            </div>
+          </div>
+          <div class="ex-sets-info">
+            <span class="ex-sets">4 × 6–10</span>
+            <span class="ex-rest">Rest 2 min</span>
+          </div>
+        </div>
+        <p class="ex-tip">Full range of motion — aim for chest to bar on pull-ups, or pull the bar to your upper chest on lat pulldown. Use the assisted machine if needed and work towards unassisted.</p>
+        <div class="ex-tracker">
+          <label class="tracker-label">My current weight</label>
+          <div class="tracker-inputs">
+            <div class="tracker-field">
+              <input type="number" class="tracker-input" id="pull-2-weight" placeholder="0" min="0" step="2.5" />
+              <span class="tracker-unit">kg</span>
+            </div>
+            <div class="tracker-field">
+              <input type="number" class="tracker-input" id="pull-2-reps" placeholder="0" min="0" max="20" />
+              <span class="tracker-unit">reps</span>
+            </div>
+          </div>
+          <button class="save-btn save-btn--pull" onclick="saveExercise('pull-2')">Save</button>
+          <span class="save-confirm" id="pull-2-confirm">Saved ✓</span>
+        </div>
+      </div>
+
+      <div class="exercise">
+        <div class="exercise-header">
+          <div class="ex-left">
+            <span class="ex-num ex-num--pull">3</span>
+            <div>
+              <h3 class="ex-name">Seated cable row</h3>
+              <div class="ex-muscles">
+                <span class="muscle-tag">mid back</span>
+                <span class="muscle-tag">lats</span>
+                <span class="muscle-tag">bicep</span>
+              </div>
+            </div>
+          </div>
+          <div class="ex-sets-info">
+            <span class="ex-sets">3 × 10–12</span>
+            <span class="ex-rest">Rest 90 sec</span>
+          </div>
+        </div>
+        <p class="ex-tip">Pull to your lower chest, keep your chest up and proud. Retract shoulder blades fully at the end of the movement — don't just pull with your arms.</p>
+        <div class="ex-tracker">
+          <label class="tracker-label">My current weight</label>
+          <div class="tracker-inputs">
+            <div class="tracker-field">
+              <input type="number" class="tracker-input" id="pull-3-weight" placeholder="0" min="0" step="2.5" />
+              <span class="tracker-unit">kg</span>
+            </div>
+            <div class="tracker-field">
+              <input type="number" class="tracker-input" id="pull-3-reps" placeholder="0" min="0" max="20" />
+              <span class="tracker-unit">reps</span>
+            </div>
+          </div>
+          <button class="save-btn save-btn--pull" onclick="saveExercise('pull-3')">Save</button>
+          <span class="save-confirm" id="pull-3-confirm">Saved ✓</span>
+        </div>
+      </div>
+
+      <div class="exercise">
+        <div class="exercise-header">
+          <div class="ex-left">
+            <span class="ex-num ex-num--pull">4</span>
+            <div>
+              <h3 class="ex-name">Face pulls</h3>
+              <div class="ex-muscles">
+                <span class="muscle-tag">rear delt</span>
+                <span class="muscle-tag">rotator cuff</span>
+              </div>
+            </div>
+          </div>
+          <div class="ex-sets-info">
+            <span class="ex-sets">3 × 15</span>
+            <span class="ex-rest">Rest 60 sec</span>
+          </div>
+        </div>
+        <p class="ex-tip">Rope to forehead height, externally rotate at the end of the rep — think about pulling your thumbs toward your ears. Do these every single pull session. Your shoulders will thank you.</p>
+        <div class="ex-tracker">
+          <label class="tracker-label">My current weight</label>
+          <div class="tracker-inputs">
+            <div class="tracker-field">
+              <input type="number" class="tracker-input" id="pull-4-weight" placeholder="0" min="0" step="2.5" />
+              <span class="tracker-unit">kg</span>
+            </div>
+            <div class="tracker-field">
+              <input type="number" class="tracker-input" id="pull-4-reps" placeholder="0" min="0" max="20" />
+              <span class="tracker-unit">reps</span>
+            </div>
+          </div>
+          <button class="save-btn save-btn--pull" onclick="saveExercise('pull-4')">Save</button>
+          <span class="save-confirm" id="pull-4-confirm">Saved ✓</span>
+        </div>
+      </div>
+
+      <div class="exercise">
+        <div class="exercise-header">
+          <div class="ex-left">
+            <span class="ex-num ex-num--pull">5</span>
+            <div>
+              <h3 class="ex-name">Bicep curl machine</h3>
+              <div class="ex-muscles">
+                <span class="muscle-tag">bicep</span>
+              </div>
+            </div>
+          </div>
+          <div class="ex-sets-info">
+            <span class="ex-sets">3 × 10–12</span>
+            <span class="ex-rest">Rest 60 sec</span>
+          </div>
+        </div>
+        <p class="ex-tip">The machine keeps constant tension on the bicep throughout the full range of motion — no cheating or swinging possible. Squeeze hard at the top, then lower slowly over 3 seconds. Great for isolating the bicep without involving the back.</p>
+        <div class="ex-tracker">
+          <label class="tracker-label">My current weight</label>
+          <div class="tracker-inputs">
+            <div class="tracker-field">
+              <input type="number" class="tracker-input" id="pull-5-weight" placeholder="0" min="0" step="2.5" />
+              <span class="tracker-unit">kg</span>
+            </div>
+            <div class="tracker-field">
+              <input type="number" class="tracker-input" id="pull-5-reps" placeholder="0" min="0" max="20" />
+              <span class="tracker-unit">reps</span>
+            </div>
+          </div>
+          <button class="save-btn save-btn--pull" onclick="saveExercise('pull-5')">Save</button>
+          <span class="save-confirm" id="pull-5-confirm">Saved ✓</span>
+        </div>
+      </div>
+
+      <div class="exercise">
+        <div class="exercise-header">
+          <div class="ex-left">
+            <span class="ex-num ex-num--pull">6</span>
+            <div>
+              <h3 class="ex-name">Hammer curls</h3>
+              <div class="ex-muscles">
+                <span class="muscle-tag">brachialis</span>
+                <span class="muscle-tag">bicep</span>
+              </div>
+            </div>
+          </div>
+          <div class="ex-sets-info">
+            <span class="ex-sets">3 × 10–12</span>
+            <span class="ex-rest">Rest 60 sec</span>
+          </div>
+        </div>
+        <p class="ex-tip">Neutral grip (thumbs up). Targets the brachialis which sits underneath the bicep — developing it pushes the bicep peak higher and thickens the arm overall.</p>
+        <div class="ex-tracker">
+          <label class="tracker-label">My current weight</label>
+          <div class="tracker-inputs">
+            <div class="tracker-field">
+              <input type="number" class="tracker-input" id="pull-6-weight" placeholder="0" min="0" step="2.5" />
+              <span class="tracker-unit">kg</span>
+            </div>
+            <div class="tracker-field">
+              <input type="number" class="tracker-input" id="pull-6-reps" placeholder="0" min="0" max="20" />
+              <span class="tracker-unit">reps</span>
+            </div>
+          </div>
+          <button class="save-btn save-btn--pull" onclick="saveExercise('pull-6')">Save</button>
+          <span class="save-confirm" id="pull-6-confirm">Saved ✓</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="workout-nav">
+      <a href="push.html" class="wn-btn wn-btn--secondary">← Push day</a>
+      <a href="legs.html" class="wn-btn wn-btn--legs">Legs day →</a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>Built for May 2027 · Track your lifts, hit your macros, trust the process.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

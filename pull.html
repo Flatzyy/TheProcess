@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <nav class="nav">
     <div class="nav-inner">
       <span class="nav-logo">MY FITNESS PLAN</span>
@@ -42,7 +41,7 @@
 
   <main class="main">
     <div class="workout-intro">
-      <p>Lead with the chest-supported row while your back is fresh. Face pulls are non-negotiable every session — they keep your shoulders healthy and balanced against all the pressing on Monday.</p>
+      <p>Lead with the chest-supported row while your back is fresh. Face pulls are non-negotiable every session — they keep your shoulders healthy and balanced against all the pressing on Monday. Tap "Form guide" on any exercise to see cues and common mistakes.</p>
     </div>
 
     <div class="exercise-list">
@@ -53,31 +52,27 @@
             <span class="ex-num ex-num--pull">1</span>
             <div>
               <h3 class="ex-name">Chest-supported machine row</h3>
-              <div class="ex-muscles">
-                <span class="muscle-tag">mid back</span>
-                <span class="muscle-tag">lats</span>
-                <span class="muscle-tag">rear delt</span>
-                <span class="muscle-tag">bicep</span>
-              </div>
+              <div class="ex-muscles"><span class="muscle-tag">mid back</span><span class="muscle-tag">lats</span><span class="muscle-tag">rear delt</span><span class="muscle-tag">bicep</span></div>
             </div>
           </div>
-          <div class="ex-sets-info">
-            <span class="ex-sets">4 × 8–10</span>
-            <span class="ex-rest">Rest 2 min</span>
-          </div>
+          <div class="ex-sets-info"><span class="ex-sets">4 × 8–10</span><span class="ex-rest">Rest 2 min</span></div>
         </div>
         <p class="ex-tip">Chest pinned to the pad throughout — this removes lower back fatigue and lets you load the back harder. Pull handles to lower chest and squeeze hard at the end.</p>
+        <div class="form-guide">
+          <button class="form-toggle" id="btn-pull-1" onclick="toggleForm('pull-1')"><span class="arrow">▶</span> Form guide</button>
+          <div class="form-details" id="form-pull-1">
+            <div class="form-grid">
+              <div class="form-col"><p class="form-col-label">Setup</p><ul class="form-cue-list"><li>Chest pressed firmly against the pad throughout</li><li>Feet flat on footrests, stable base</li><li>Arms fully extended before each rep</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Execution cues</p><ul class="form-cue-list"><li>Pull handles to lower chest — not stomach</li><li>Lead with elbows, drive them back</li><li>Squeeze shoulder blades together at the end</li><li>Pause 1 second at contraction</li><li>Lower slowly with control</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Common mistakes</p><ul class="form-cue-list form-mistake-list"><li>Letting chest come off the pad</li><li>Pulling to the stomach instead of chest</li><li>Using biceps only — think elbows not hands</li><li>Not reaching full extension between reps</li></ul></div>
+            </div>
+          </div>
+        </div>
         <div class="ex-tracker">
           <label class="tracker-label">My current weight</label>
           <div class="tracker-inputs">
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="pull-1-weight" placeholder="0" min="0" step="2.5" />
-              <span class="tracker-unit">kg</span>
-            </div>
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="pull-1-reps" placeholder="0" min="0" max="20" />
-              <span class="tracker-unit">reps</span>
-            </div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="pull-1-weight" placeholder="0" min="0" step="2.5" /><span class="tracker-unit">kg</span></div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="pull-1-reps" placeholder="0" min="0" max="20" /><span class="tracker-unit">reps</span></div>
           </div>
           <button class="save-btn save-btn--pull" onclick="saveExercise('pull-1')">Save</button>
           <span class="save-confirm" id="pull-1-confirm">Saved ✓</span>
@@ -90,30 +85,27 @@
             <span class="ex-num ex-num--pull">2</span>
             <div>
               <h3 class="ex-name">Pull-ups or lat pulldown</h3>
-              <div class="ex-muscles">
-                <span class="muscle-tag">lats</span>
-                <span class="muscle-tag">bicep</span>
-                <span class="muscle-tag">rear delt</span>
-              </div>
+              <div class="ex-muscles"><span class="muscle-tag">lats</span><span class="muscle-tag">bicep</span><span class="muscle-tag">rear delt</span></div>
             </div>
           </div>
-          <div class="ex-sets-info">
-            <span class="ex-sets">4 × 6–10</span>
-            <span class="ex-rest">Rest 2 min</span>
+          <div class="ex-sets-info"><span class="ex-sets">4 × 6–10</span><span class="ex-rest">Rest 2 min</span></div>
+        </div>
+        <p class="ex-tip">Full range of motion — chest to bar on pull-ups, bar to upper chest on lat pulldown. Use the assisted machine if needed and work toward unassisted.</p>
+        <div class="form-guide">
+          <button class="form-toggle" id="btn-pull-2" onclick="toggleForm('pull-2')"><span class="arrow">▶</span> Form guide</button>
+          <div class="form-details" id="form-pull-2">
+            <div class="form-grid">
+              <div class="form-col"><p class="form-col-label">Setup</p><ul class="form-cue-list"><li>Grip just wider than shoulder-width</li><li>Arms fully extended at the bottom</li><li>Slight lean back — chest up toward the bar</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Execution cues</p><ul class="form-cue-list"><li>Initiate by pulling shoulder blades down first</li><li>Drive elbows toward your hips</li><li>Pull until chest touches bar or bar reaches upper chest</li><li>Lower slowly over 2–3 seconds</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Common mistakes</p><ul class="form-cue-list form-mistake-list"><li>Kipping or using momentum</li><li>Pulling with biceps only — engage the lats</li><li>Stopping short at the top</li><li>Dropping too fast on the way down</li></ul></div>
+            </div>
           </div>
         </div>
-        <p class="ex-tip">Full range of motion — aim for chest to bar on pull-ups, or pull the bar to your upper chest on lat pulldown. Use the assisted machine if needed and work towards unassisted.</p>
         <div class="ex-tracker">
           <label class="tracker-label">My current weight</label>
           <div class="tracker-inputs">
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="pull-2-weight" placeholder="0" min="0" step="2.5" />
-              <span class="tracker-unit">kg</span>
-            </div>
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="pull-2-reps" placeholder="0" min="0" max="20" />
-              <span class="tracker-unit">reps</span>
-            </div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="pull-2-weight" placeholder="0" min="0" step="2.5" /><span class="tracker-unit">kg</span></div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="pull-2-reps" placeholder="0" min="0" max="20" /><span class="tracker-unit">reps</span></div>
           </div>
           <button class="save-btn save-btn--pull" onclick="saveExercise('pull-2')">Save</button>
           <span class="save-confirm" id="pull-2-confirm">Saved ✓</span>
@@ -126,30 +118,27 @@
             <span class="ex-num ex-num--pull">3</span>
             <div>
               <h3 class="ex-name">Seated cable row</h3>
-              <div class="ex-muscles">
-                <span class="muscle-tag">mid back</span>
-                <span class="muscle-tag">lats</span>
-                <span class="muscle-tag">bicep</span>
-              </div>
+              <div class="ex-muscles"><span class="muscle-tag">mid back</span><span class="muscle-tag">lats</span><span class="muscle-tag">bicep</span></div>
             </div>
           </div>
-          <div class="ex-sets-info">
-            <span class="ex-sets">3 × 10–12</span>
-            <span class="ex-rest">Rest 90 sec</span>
-          </div>
+          <div class="ex-sets-info"><span class="ex-sets">3 × 10–12</span><span class="ex-rest">Rest 90 sec</span></div>
         </div>
         <p class="ex-tip">Pull to your lower chest, keep your chest up and proud. Retract shoulder blades fully at the end of the movement — don't just pull with your arms.</p>
+        <div class="form-guide">
+          <button class="form-toggle" id="btn-pull-3" onclick="toggleForm('pull-3')"><span class="arrow">▶</span> Form guide</button>
+          <div class="form-details" id="form-pull-3">
+            <div class="form-grid">
+              <div class="form-col"><p class="form-col-label">Setup</p><ul class="form-cue-list"><li>Sit upright, slight bend in knees</li><li>Arms fully extended, slight stretch in back</li><li>Chest up, core braced</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Execution cues</p><ul class="form-cue-list"><li>Pull handle to lower chest or upper stomach</li><li>Keep torso still — don't rock back</li><li>Retract shoulder blades fully at the end</li><li>Control the return — feel the lat stretch</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Common mistakes</p><ul class="form-cue-list form-mistake-list"><li>Rocking the torso back for momentum</li><li>Pulling to stomach instead of chest</li><li>Rounding the lower back</li><li>Rushing the eccentric</li></ul></div>
+            </div>
+          </div>
+        </div>
         <div class="ex-tracker">
           <label class="tracker-label">My current weight</label>
           <div class="tracker-inputs">
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="pull-3-weight" placeholder="0" min="0" step="2.5" />
-              <span class="tracker-unit">kg</span>
-            </div>
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="pull-3-reps" placeholder="0" min="0" max="20" />
-              <span class="tracker-unit">reps</span>
-            </div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="pull-3-weight" placeholder="0" min="0" step="2.5" /><span class="tracker-unit">kg</span></div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="pull-3-reps" placeholder="0" min="0" max="20" /><span class="tracker-unit">reps</span></div>
           </div>
           <button class="save-btn save-btn--pull" onclick="saveExercise('pull-3')">Save</button>
           <span class="save-confirm" id="pull-3-confirm">Saved ✓</span>
@@ -162,29 +151,27 @@
             <span class="ex-num ex-num--pull">4</span>
             <div>
               <h3 class="ex-name">Face pulls</h3>
-              <div class="ex-muscles">
-                <span class="muscle-tag">rear delt</span>
-                <span class="muscle-tag">rotator cuff</span>
-              </div>
+              <div class="ex-muscles"><span class="muscle-tag">rear delt</span><span class="muscle-tag">rotator cuff</span></div>
             </div>
           </div>
-          <div class="ex-sets-info">
-            <span class="ex-sets">3 × 15</span>
-            <span class="ex-rest">Rest 60 sec</span>
+          <div class="ex-sets-info"><span class="ex-sets">3 × 15</span><span class="ex-rest">Rest 60 sec</span></div>
+        </div>
+        <p class="ex-tip">Rope to forehead height, externally rotate at the end of the rep — think about pulling your thumbs toward your ears. Do these every single pull session.</p>
+        <div class="form-guide">
+          <button class="form-toggle" id="btn-pull-4" onclick="toggleForm('pull-4')"><span class="arrow">▶</span> Form guide</button>
+          <div class="form-details" id="form-pull-4">
+            <div class="form-grid">
+              <div class="form-col"><p class="form-col-label">Setup</p><ul class="form-cue-list"><li>Set cable to upper chest or eye level</li><li>Rope attachment, grip with thumbs pointing back</li><li>Step back to create tension before starting</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Execution cues</p><ul class="form-cue-list"><li>Pull rope toward your forehead — not your chin</li><li>Externally rotate at the end — thumbs back toward ears</li><li>Elbows should finish high and wide</li><li>Control the return fully</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Common mistakes</p><ul class="form-cue-list form-mistake-list"><li>Pulling to the chin — becomes an upright row</li><li>Skipping the external rotation at the end</li><li>Going too heavy — ruins the movement</li><li>Elbows dropping below shoulder height</li></ul></div>
+            </div>
           </div>
         </div>
-        <p class="ex-tip">Rope to forehead height, externally rotate at the end of the rep — think about pulling your thumbs toward your ears. Do these every single pull session. Your shoulders will thank you.</p>
         <div class="ex-tracker">
           <label class="tracker-label">My current weight</label>
           <div class="tracker-inputs">
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="pull-4-weight" placeholder="0" min="0" step="2.5" />
-              <span class="tracker-unit">kg</span>
-            </div>
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="pull-4-reps" placeholder="0" min="0" max="20" />
-              <span class="tracker-unit">reps</span>
-            </div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="pull-4-weight" placeholder="0" min="0" step="2.5" /><span class="tracker-unit">kg</span></div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="pull-4-reps" placeholder="0" min="0" max="20" /><span class="tracker-unit">reps</span></div>
           </div>
           <button class="save-btn save-btn--pull" onclick="saveExercise('pull-4')">Save</button>
           <span class="save-confirm" id="pull-4-confirm">Saved ✓</span>
@@ -197,28 +184,27 @@
             <span class="ex-num ex-num--pull">5</span>
             <div>
               <h3 class="ex-name">Bicep curl machine</h3>
-              <div class="ex-muscles">
-                <span class="muscle-tag">bicep</span>
-              </div>
+              <div class="ex-muscles"><span class="muscle-tag">bicep</span></div>
             </div>
           </div>
-          <div class="ex-sets-info">
-            <span class="ex-sets">3 × 10–12</span>
-            <span class="ex-rest">Rest 60 sec</span>
+          <div class="ex-sets-info"><span class="ex-sets">3 × 10–12</span><span class="ex-rest">Rest 60 sec</span></div>
+        </div>
+        <p class="ex-tip">The machine keeps constant tension on the bicep throughout. Squeeze hard at the top, lower slowly over 3 seconds. Great for isolating the bicep without involving the back.</p>
+        <div class="form-guide">
+          <button class="form-toggle" id="btn-pull-5" onclick="toggleForm('pull-5')"><span class="arrow">▶</span> Form guide</button>
+          <div class="form-details" id="form-pull-5">
+            <div class="form-grid">
+              <div class="form-col"><p class="form-col-label">Setup</p><ul class="form-cue-list"><li>Adjust seat so elbows align with the machine pivot point</li><li>Upper arms flat on the pad throughout</li><li>Grip handles with palms facing up</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Execution cues</p><ul class="form-cue-list"><li>Curl to full contraction — squeeze at the top</li><li>Lower slowly over 3 seconds</li><li>Don't let the weight stack touch between reps</li><li>Keep upper arms pinned to the pad</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Common mistakes</p><ul class="form-cue-list form-mistake-list"><li>Lifting upper arms off the pad mid-rep</li><li>Dropping the weight quickly on the way down</li><li>Not adjusting seat height — misaligned pivot</li></ul></div>
+            </div>
           </div>
         </div>
-        <p class="ex-tip">The machine keeps constant tension on the bicep throughout the full range of motion — no cheating or swinging possible. Squeeze hard at the top, then lower slowly over 3 seconds. Great for isolating the bicep without involving the back.</p>
         <div class="ex-tracker">
           <label class="tracker-label">My current weight</label>
           <div class="tracker-inputs">
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="pull-5-weight" placeholder="0" min="0" step="2.5" />
-              <span class="tracker-unit">kg</span>
-            </div>
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="pull-5-reps" placeholder="0" min="0" max="20" />
-              <span class="tracker-unit">reps</span>
-            </div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="pull-5-weight" placeholder="0" min="0" step="2.5" /><span class="tracker-unit">kg</span></div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="pull-5-reps" placeholder="0" min="0" max="20" /><span class="tracker-unit">reps</span></div>
           </div>
           <button class="save-btn save-btn--pull" onclick="saveExercise('pull-5')">Save</button>
           <span class="save-confirm" id="pull-5-confirm">Saved ✓</span>
@@ -231,29 +217,27 @@
             <span class="ex-num ex-num--pull">6</span>
             <div>
               <h3 class="ex-name">Hammer curls</h3>
-              <div class="ex-muscles">
-                <span class="muscle-tag">brachialis</span>
-                <span class="muscle-tag">bicep</span>
-              </div>
+              <div class="ex-muscles"><span class="muscle-tag">brachialis</span><span class="muscle-tag">bicep</span></div>
             </div>
           </div>
-          <div class="ex-sets-info">
-            <span class="ex-sets">3 × 10–12</span>
-            <span class="ex-rest">Rest 60 sec</span>
+          <div class="ex-sets-info"><span class="ex-sets">3 × 10–12</span><span class="ex-rest">Rest 60 sec</span></div>
+        </div>
+        <p class="ex-tip">Neutral grip — thumbs pointing forward. Targets the brachialis which sits underneath the bicep, pushing the peak higher and thickening the arm overall.</p>
+        <div class="form-guide">
+          <button class="form-toggle" id="btn-pull-6" onclick="toggleForm('pull-6')"><span class="arrow">▶</span> Form guide</button>
+          <div class="form-details" id="form-pull-6">
+            <div class="form-grid">
+              <div class="form-col"><p class="form-col-label">Setup</p><ul class="form-cue-list"><li>Stand upright, dumbbells at sides</li><li>Neutral grip — thumbs pointing forward</li><li>Elbows pinned to sides</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Execution cues</p><ul class="form-cue-list"><li>Curl straight up — don't rotate the wrist</li><li>Squeeze at the top of the movement</li><li>Lower slowly — 2–3 seconds</li><li>Alternate arms or do both together</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Common mistakes</p><ul class="form-cue-list form-mistake-list"><li>Swinging the body to lift the weight</li><li>Rotating the wrist — becomes a regular curl</li><li>Elbows drifting forward away from the body</li></ul></div>
+            </div>
           </div>
         </div>
-        <p class="ex-tip">Neutral grip (thumbs up). Targets the brachialis which sits underneath the bicep — developing it pushes the bicep peak higher and thickens the arm overall.</p>
         <div class="ex-tracker">
           <label class="tracker-label">My current weight</label>
           <div class="tracker-inputs">
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="pull-6-weight" placeholder="0" min="0" step="2.5" />
-              <span class="tracker-unit">kg</span>
-            </div>
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="pull-6-reps" placeholder="0" min="0" max="20" />
-              <span class="tracker-unit">reps</span>
-            </div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="pull-6-weight" placeholder="0" min="0" step="2.5" /><span class="tracker-unit">kg</span></div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="pull-6-reps" placeholder="0" min="0" max="20" /><span class="tracker-unit">reps</span></div>
           </div>
           <button class="save-btn save-btn--pull" onclick="saveExercise('pull-6')">Save</button>
           <span class="save-confirm" id="pull-6-confirm">Saved ✓</span>
@@ -266,13 +250,9 @@
       <a href="push.html" class="wn-btn wn-btn--secondary">← Push day</a>
       <a href="legs.html" class="wn-btn wn-btn--legs">Legs day →</a>
     </div>
-
   </main>
 
-  <footer class="footer">
-    <p>Built for May 2027 · Track your lifts, hit your macros, trust the process.</p>
-  </footer>
-
+  <footer class="footer"><p>Built for May 2027 · Track your lifts, hit your macros, trust the process.</p></footer>
   <script src="script.js"></script>
 </body>
 </html>

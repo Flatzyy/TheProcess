@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <nav class="nav">
     <div class="nav-inner">
       <span class="nav-logo">MY FITNESS PLAN</span>
@@ -42,7 +41,7 @@
 
   <main class="main">
     <div class="workout-intro">
-      <p>The biggest session of the week. Lead with hack squat or leg press while your legs are completely fresh, then hammer the hamstrings from two angles. Don't skip calves.</p>
+      <p>The biggest session of the week. Lead with hack squat or leg press while your legs are completely fresh, then hammer the hamstrings from two angles. Don't skip calves. Tap "Form guide" on any exercise for cues and common mistakes.</p>
     </div>
 
     <div class="exercise-list">
@@ -53,29 +52,27 @@
             <span class="ex-num ex-num--legs">1</span>
             <div>
               <h3 class="ex-name">Hack squat or leg press</h3>
-              <div class="ex-muscles">
-                <span class="muscle-tag">quads</span>
-                <span class="muscle-tag">glutes</span>
-              </div>
+              <div class="ex-muscles"><span class="muscle-tag">quads</span><span class="muscle-tag">glutes</span></div>
             </div>
           </div>
-          <div class="ex-sets-info">
-            <span class="ex-sets">4 × 8–10</span>
-            <span class="ex-rest">Rest 2–3 min</span>
-          </div>
+          <div class="ex-sets-info"><span class="ex-sets">4 × 8–10</span><span class="ex-rest">Rest 2–3 min</span></div>
         </div>
         <p class="ex-tip">Feet low and narrow on the platform for maximum quad focus. Control the descent — don't let the weight drop. Full depth if your mobility allows.</p>
+        <div class="form-guide">
+          <button class="form-toggle" id="btn-legs-1" onclick="toggleForm('legs-1')"><span class="arrow">▶</span> Form guide</button>
+          <div class="form-details" id="form-legs-1">
+            <div class="form-grid">
+              <div class="form-col"><p class="form-col-label">Setup</p><ul class="form-cue-list"><li>Feet low and narrow for quad focus</li><li>Back flat against the pad</li><li>Unlock safety handles before lowering</li><li>Toes slightly pointed out — 15–30°</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Execution cues</p><ul class="form-cue-list"><li>Lower slowly — 3 seconds down</li><li>Aim for thighs parallel or below</li><li>Drive through the full foot on the way up</li><li>Don't lock knees fully at the top</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Common mistakes</p><ul class="form-cue-list form-mistake-list"><li>Knees caving inward — push them out</li><li>Lower back peeling off the pad</li><li>Cutting depth short</li><li>Locking safeties before completing the set</li></ul></div>
+            </div>
+          </div>
+        </div>
         <div class="ex-tracker">
           <label class="tracker-label">My current weight</label>
           <div class="tracker-inputs">
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="legs-1-weight" placeholder="0" min="0" step="5" />
-              <span class="tracker-unit">kg</span>
-            </div>
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="legs-1-reps" placeholder="0" min="0" max="20" />
-              <span class="tracker-unit">reps</span>
-            </div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="legs-1-weight" placeholder="0" min="0" step="5" /><span class="tracker-unit">kg</span></div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="legs-1-reps" placeholder="0" min="0" max="20" /><span class="tracker-unit">reps</span></div>
           </div>
           <button class="save-btn save-btn--legs" onclick="saveExercise('legs-1')">Save</button>
           <span class="save-confirm" id="legs-1-confirm">Saved ✓</span>
@@ -88,28 +85,27 @@
             <span class="ex-num ex-num--legs">2</span>
             <div>
               <h3 class="ex-name">Lying leg curl</h3>
-              <div class="ex-muscles">
-                <span class="muscle-tag">hamstrings</span>
-              </div>
+              <div class="ex-muscles"><span class="muscle-tag">hamstrings</span></div>
             </div>
           </div>
-          <div class="ex-sets-info">
-            <span class="ex-sets">4 × 10–12</span>
-            <span class="ex-rest">Rest 90 sec</span>
+          <div class="ex-sets-info"><span class="ex-sets">4 × 10–12</span><span class="ex-rest">Rest 90 sec</span></div>
+        </div>
+        <p class="ex-tip">Curl heels to glutes, squeeze at the top, then lower slowly over 3 seconds. The eccentric is where most hamstring growth happens — don't rush it.</p>
+        <div class="form-guide">
+          <button class="form-toggle" id="btn-legs-2" onclick="toggleForm('legs-2')"><span class="arrow">▶</span> Form guide</button>
+          <div class="form-details" id="form-legs-2">
+            <div class="form-grid">
+              <div class="form-col"><p class="form-col-label">Setup</p><ul class="form-cue-list"><li>Adjust pad so it sits just above the heels</li><li>Lie face down, hips flat on the bench</li><li>Hold handles lightly for stability</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Execution cues</p><ul class="form-cue-list"><li>Curl heels toward glutes smoothly</li><li>Squeeze hard at the top — pause 1 second</li><li>Lower over 3 seconds — don't let it drop</li><li>Hips stay flat — don't lift them to assist</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Common mistakes</p><ul class="form-cue-list form-mistake-list"><li>Hips rising off the bench to help the curl</li><li>Dropping the weight quickly on descent</li><li>Pad positioned too high or too low</li></ul></div>
+            </div>
           </div>
         </div>
-        <p class="ex-tip">Curl heels to glutes, squeeze at the top, then lower slowly over 3 seconds. The eccentric (lowering phase) is where most hamstring growth happens — don't rush it.</p>
         <div class="ex-tracker">
           <label class="tracker-label">My current weight</label>
           <div class="tracker-inputs">
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="legs-2-weight" placeholder="0" min="0" step="2.5" />
-              <span class="tracker-unit">kg</span>
-            </div>
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="legs-2-reps" placeholder="0" min="0" max="20" />
-              <span class="tracker-unit">reps</span>
-            </div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="legs-2-weight" placeholder="0" min="0" step="2.5" /><span class="tracker-unit">kg</span></div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="legs-2-reps" placeholder="0" min="0" max="20" /><span class="tracker-unit">reps</span></div>
           </div>
           <button class="save-btn save-btn--legs" onclick="saveExercise('legs-2')">Save</button>
           <span class="save-confirm" id="legs-2-confirm">Saved ✓</span>
@@ -122,28 +118,27 @@
             <span class="ex-num ex-num--legs">3</span>
             <div>
               <h3 class="ex-name">Leg extension</h3>
-              <div class="ex-muscles">
-                <span class="muscle-tag">quads</span>
-              </div>
+              <div class="ex-muscles"><span class="muscle-tag">quads</span></div>
             </div>
           </div>
-          <div class="ex-sets-info">
-            <span class="ex-sets">3 × 12–15</span>
-            <span class="ex-rest">Rest 60 sec</span>
-          </div>
+          <div class="ex-sets-info"><span class="ex-sets">3 × 12–15</span><span class="ex-rest">Rest 60 sec</span></div>
         </div>
         <p class="ex-tip">Pause and squeeze at the top for 1 second on every rep. Pure quad isolation — you should feel a strong burn by rep 12. Control the weight on the way down.</p>
+        <div class="form-guide">
+          <button class="form-toggle" id="btn-legs-3" onclick="toggleForm('legs-3')"><span class="arrow">▶</span> Form guide</button>
+          <div class="form-details" id="form-legs-3">
+            <div class="form-grid">
+              <div class="form-col"><p class="form-col-label">Setup</p><ul class="form-cue-list"><li>Adjust seat so knees are at the edge of the seat</li><li>Pad rests on lower shin, just above ankles</li><li>Sit upright, grip handles</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Execution cues</p><ul class="form-cue-list"><li>Extend fully — squeeze quads hard at the top</li><li>Pause for 1 second at full extension</li><li>Lower slowly — 2–3 seconds</li><li>Don't let the stack touch between reps</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Common mistakes</p><ul class="form-cue-list form-mistake-list"><li>Not reaching full extension at the top</li><li>Swinging or using momentum</li><li>Seat adjusted too far back — knee stress</li></ul></div>
+            </div>
+          </div>
+        </div>
         <div class="ex-tracker">
           <label class="tracker-label">My current weight</label>
           <div class="tracker-inputs">
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="legs-3-weight" placeholder="0" min="0" step="2.5" />
-              <span class="tracker-unit">kg</span>
-            </div>
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="legs-3-reps" placeholder="0" min="0" max="20" />
-              <span class="tracker-unit">reps</span>
-            </div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="legs-3-weight" placeholder="0" min="0" step="2.5" /><span class="tracker-unit">kg</span></div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="legs-3-reps" placeholder="0" min="0" max="20" /><span class="tracker-unit">reps</span></div>
           </div>
           <button class="save-btn save-btn--legs" onclick="saveExercise('legs-3')">Save</button>
           <span class="save-confirm" id="legs-3-confirm">Saved ✓</span>
@@ -156,28 +151,27 @@
             <span class="ex-num ex-num--legs">4</span>
             <div>
               <h3 class="ex-name">Seated leg curl</h3>
-              <div class="ex-muscles">
-                <span class="muscle-tag">hamstrings</span>
-              </div>
+              <div class="ex-muscles"><span class="muscle-tag">hamstrings</span></div>
             </div>
           </div>
-          <div class="ex-sets-info">
-            <span class="ex-sets">3 × 12–15</span>
-            <span class="ex-rest">Rest 60 sec</span>
+          <div class="ex-sets-info"><span class="ex-sets">3 × 12–15</span><span class="ex-rest">Rest 60 sec</span></div>
+        </div>
+        <p class="ex-tip">The seated position stretches the hamstring at a different angle to the lying curl — pairing both in the same session gives more complete hamstring development.</p>
+        <div class="form-guide">
+          <button class="form-toggle" id="btn-legs-4" onclick="toggleForm('legs-4')"><span class="arrow">▶</span> Form guide</button>
+          <div class="form-details" id="form-legs-4">
+            <div class="form-grid">
+              <div class="form-col"><p class="form-col-label">Setup</p><ul class="form-cue-list"><li>Adjust back pad so knees sit just off the seat edge</li><li>Top pad rests on lower quads</li><li>Feet flexed, toes pointing up</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Execution cues</p><ul class="form-cue-list"><li>Curl as far as the machine allows</li><li>Squeeze at full contraction</li><li>Lower slowly — 3 seconds</li><li>Feel the hamstring stretch on the return</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Common mistakes</p><ul class="form-cue-list form-mistake-list"><li>Not curling through full range of motion</li><li>Lifting hips off the seat during the curl</li><li>Going too heavy — ruins control</li></ul></div>
+            </div>
           </div>
         </div>
-        <p class="ex-tip">The seated position stretches the hamstring at a different angle to the lying curl — pairing both in the same session gives more complete hamstring development. Control the return.</p>
         <div class="ex-tracker">
           <label class="tracker-label">My current weight</label>
           <div class="tracker-inputs">
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="legs-4-weight" placeholder="0" min="0" step="2.5" />
-              <span class="tracker-unit">kg</span>
-            </div>
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="legs-4-reps" placeholder="0" min="0" max="20" />
-              <span class="tracker-unit">reps</span>
-            </div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="legs-4-weight" placeholder="0" min="0" step="2.5" /><span class="tracker-unit">kg</span></div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="legs-4-reps" placeholder="0" min="0" max="20" /><span class="tracker-unit">reps</span></div>
           </div>
           <button class="save-btn save-btn--legs" onclick="saveExercise('legs-4')">Save</button>
           <span class="save-confirm" id="legs-4-confirm">Saved ✓</span>
@@ -190,30 +184,27 @@
             <span class="ex-num ex-num--legs">5</span>
             <div>
               <h3 class="ex-name">Walking lunges</h3>
-              <div class="ex-muscles">
-                <span class="muscle-tag">quads</span>
-                <span class="muscle-tag">glutes</span>
-                <span class="muscle-tag">hamstrings</span>
-              </div>
+              <div class="ex-muscles"><span class="muscle-tag">quads</span><span class="muscle-tag">glutes</span><span class="muscle-tag">hamstrings</span></div>
             </div>
           </div>
-          <div class="ex-sets-info">
-            <span class="ex-sets">3 × 10/leg</span>
-            <span class="ex-rest">Rest 90 sec</span>
-          </div>
+          <div class="ex-sets-info"><span class="ex-sets">3 × 10/leg</span><span class="ex-rest">Rest 90 sec</span></div>
         </div>
         <p class="ex-tip">Keep torso upright throughout. Knee tracks over your second toe — don't let it cave inward. Full stride length activates more glute. Use dumbbells to add load.</p>
+        <div class="form-guide">
+          <button class="form-toggle" id="btn-legs-5" onclick="toggleForm('legs-5')"><span class="arrow">▶</span> Form guide</button>
+          <div class="form-details" id="form-legs-5">
+            <div class="form-grid">
+              <div class="form-col"><p class="form-col-label">Setup</p><ul class="form-cue-list"><li>Stand tall, core braced</li><li>Dumbbells at sides if adding load</li><li>Take a long stride forward</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Execution cues</p><ul class="form-cue-list"><li>Keep torso upright — don't lean forward</li><li>Front knee tracks over second toe</li><li>Lower back knee toward floor — 1–2 inches off</li><li>Drive through front heel to step forward</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Common mistakes</p><ul class="form-cue-list form-mistake-list"><li>Front knee caving inward</li><li>Torso leaning too far forward</li><li>Short stride — limits glute activation</li><li>Back knee slamming the floor</li></ul></div>
+            </div>
+          </div>
+        </div>
         <div class="ex-tracker">
           <label class="tracker-label">My current weight</label>
           <div class="tracker-inputs">
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="legs-5-weight" placeholder="0" min="0" step="2.5" />
-              <span class="tracker-unit">kg</span>
-            </div>
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="legs-5-reps" placeholder="0" min="0" max="30" />
-              <span class="tracker-unit">reps</span>
-            </div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="legs-5-weight" placeholder="0" min="0" step="2.5" /><span class="tracker-unit">kg</span></div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="legs-5-reps" placeholder="0" min="0" max="30" /><span class="tracker-unit">reps</span></div>
           </div>
           <button class="save-btn save-btn--legs" onclick="saveExercise('legs-5')">Save</button>
           <span class="save-confirm" id="legs-5-confirm">Saved ✓</span>
@@ -226,28 +217,27 @@
             <span class="ex-num ex-num--legs">6</span>
             <div>
               <h3 class="ex-name">Standing calf raises</h3>
-              <div class="ex-muscles">
-                <span class="muscle-tag">calves</span>
-              </div>
+              <div class="ex-muscles"><span class="muscle-tag">calves</span></div>
             </div>
           </div>
-          <div class="ex-sets-info">
-            <span class="ex-sets">4 × 15–20</span>
-            <span class="ex-rest">Rest 60 sec</span>
-          </div>
+          <div class="ex-sets-info"><span class="ex-sets">4 × 15–20</span><span class="ex-rest">Rest 60 sec</span></div>
         </div>
         <p class="ex-tip">Full range of motion is essential — deep stretch at the bottom, hold the contraction at the top for 1 second. Calves respond to volume, so don't rush through these.</p>
+        <div class="form-guide">
+          <button class="form-toggle" id="btn-legs-6" onclick="toggleForm('legs-6')"><span class="arrow">▶</span> Form guide</button>
+          <div class="form-details" id="form-legs-6">
+            <div class="form-grid">
+              <div class="form-col"><p class="form-col-label">Setup</p><ul class="form-cue-list"><li>Stand on edge of a step or plate if available</li><li>Balls of feet on the edge — heels hanging</li><li>Hold something stable for balance</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Execution cues</p><ul class="form-cue-list"><li>Lower heels below the step level — full stretch</li><li>Raise up onto tiptoes as high as possible</li><li>Hold the contraction at the top for 1 second</li><li>Slow and controlled throughout</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Common mistakes</p><ul class="form-cue-list form-mistake-list"><li>Bouncing at the bottom — lose the stretch</li><li>Not achieving full range — partial reps</li><li>Going too fast — calves need slow controlled reps</li></ul></div>
+            </div>
+          </div>
+        </div>
         <div class="ex-tracker">
           <label class="tracker-label">My current weight</label>
           <div class="tracker-inputs">
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="legs-6-weight" placeholder="0" min="0" step="5" />
-              <span class="tracker-unit">kg</span>
-            </div>
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="legs-6-reps" placeholder="0" min="0" max="30" />
-              <span class="tracker-unit">reps</span>
-            </div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="legs-6-weight" placeholder="0" min="0" step="5" /><span class="tracker-unit">kg</span></div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="legs-6-reps" placeholder="0" min="0" max="30" /><span class="tracker-unit">reps</span></div>
           </div>
           <button class="save-btn save-btn--legs" onclick="saveExercise('legs-6')">Save</button>
           <span class="save-confirm" id="legs-6-confirm">Saved ✓</span>
@@ -260,13 +250,9 @@
       <a href="pull.html" class="wn-btn wn-btn--secondary">← Pull day</a>
       <a href="nutrition.html" class="wn-btn wn-btn--primary">Nutrition →</a>
     </div>
-
   </main>
 
-  <footer class="footer">
-    <p>Built for May 2027 · Track your lifts, hit your macros, trust the process.</p>
-  </footer>
-
+  <footer class="footer"><p>Built for May 2027 · Track your lifts, hit your macros, trust the process.</p></footer>
   <script src="script.js"></script>
 </body>
 </html>

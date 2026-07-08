@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <nav class="nav">
     <div class="nav-inner">
       <span class="nav-logo">MY FITNESS PLAN</span>
@@ -42,7 +41,7 @@
 
   <main class="main">
     <div class="workout-intro">
-      <p>Start with the two heavy compound movements while you're fresh, then move into isolation work. Rest times matter — use them fully on the big lifts.</p>
+      <p>Start with the two heavy compound movements while you're fresh, then move into isolation work. Rest times matter — use them fully on the big lifts. Tap "Form guide" on any exercise to see setup cues and common mistakes.</p>
     </div>
 
     <div class="exercise-list">
@@ -53,30 +52,27 @@
             <span class="ex-num ex-num--push">1</span>
             <div>
               <h3 class="ex-name">Barbell bench press</h3>
-              <div class="ex-muscles">
-                <span class="muscle-tag">chest</span>
-                <span class="muscle-tag">front delt</span>
-                <span class="muscle-tag">tricep</span>
-              </div>
+              <div class="ex-muscles"><span class="muscle-tag">chest</span><span class="muscle-tag">front delt</span><span class="muscle-tag">tricep</span></div>
             </div>
           </div>
-          <div class="ex-sets-info">
-            <span class="ex-sets">4 × 6–8</span>
-            <span class="ex-rest">Rest 2–3 min</span>
-          </div>
+          <div class="ex-sets-info"><span class="ex-sets">4 × 6–8</span><span class="ex-rest">Rest 2–3 min</span></div>
         </div>
         <p class="ex-tip">Retract your shoulder blades and drive your feet into the floor. Lower the bar to your lower chest, touch lightly, and press up and back. Your primary compound lift — load it progressively every week.</p>
+        <div class="form-guide">
+          <button class="form-toggle" id="btn-push-1" onclick="toggleForm('push-1')"><span class="arrow">▶</span> Form guide</button>
+          <div class="form-details" id="form-push-1">
+            <div class="form-grid">
+              <div class="form-col"><p class="form-col-label">Setup</p><ul class="form-cue-list"><li>Feet flat on floor, drive them into the ground</li><li>Retract and depress shoulder blades — create a stable base</li><li>Slight arch in lower back, chest up</li><li>Grip just wider than shoulder-width</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Execution cues</p><ul class="form-cue-list"><li>Lower bar to lower chest in a slight diagonal path</li><li>Lightly touch chest — don't bounce</li><li>Drive feet into floor as you press up</li><li>Press bar back and slightly toward your face</li><li>Lock out fully at the top</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Common mistakes</p><ul class="form-cue-list form-mistake-list"><li>Elbows flaring to 90° — keep at 45°</li><li>Bouncing the bar off the chest</li><li>Feet coming off the floor mid-rep</li><li>Losing shoulder blade retraction under load</li></ul></div>
+            </div>
+          </div>
+        </div>
         <div class="ex-tracker">
           <label class="tracker-label">My current weight</label>
           <div class="tracker-inputs">
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="push-1-weight" placeholder="0" min="0" step="2.5" />
-              <span class="tracker-unit">kg</span>
-            </div>
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="push-1-reps" placeholder="0" min="0" max="20" />
-              <span class="tracker-unit">reps</span>
-            </div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="push-1-weight" placeholder="0" min="0" step="2.5" /><span class="tracker-unit">kg</span></div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="push-1-reps" placeholder="0" min="0" max="20" /><span class="tracker-unit">reps</span></div>
           </div>
           <button class="save-btn" onclick="saveExercise('push-1')">Save</button>
           <span class="save-confirm" id="push-1-confirm">Saved ✓</span>
@@ -89,29 +85,27 @@
             <span class="ex-num ex-num--push">2</span>
             <div>
               <h3 class="ex-name">Incline dumbbell press</h3>
-              <div class="ex-muscles">
-                <span class="muscle-tag">upper chest</span>
-                <span class="muscle-tag">front delt</span>
-              </div>
+              <div class="ex-muscles"><span class="muscle-tag">upper chest</span><span class="muscle-tag">front delt</span></div>
             </div>
           </div>
-          <div class="ex-sets-info">
-            <span class="ex-sets">3 × 8–10</span>
-            <span class="ex-rest">Rest 90 sec</span>
-          </div>
+          <div class="ex-sets-info"><span class="ex-sets">3 × 8–10</span><span class="ex-rest">Rest 90 sec</span></div>
         </div>
         <p class="ex-tip">Set bench to 30–45°. Keep elbows at 45° from your torso — this protects the shoulder and keeps tension on the upper chest.</p>
+        <div class="form-guide">
+          <button class="form-toggle" id="btn-push-2" onclick="toggleForm('push-2')"><span class="arrow">▶</span> Form guide</button>
+          <div class="form-details" id="form-push-2">
+            <div class="form-grid">
+              <div class="form-col"><p class="form-col-label">Setup</p><ul class="form-cue-list"><li>Set bench to 30–45° — higher angles shift load to shoulders</li><li>Sit back into the pad, feet flat</li><li>Dumbbells at shoulder height, palms forward</li><li>Retract shoulder blades before pressing</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Execution cues</p><ul class="form-cue-list"><li>Keep elbows at 45° from torso throughout</li><li>Lower slowly until dumbbells are level with chest</li><li>Press up and slightly together at the top</li><li>Don't fully lock elbows — keep slight bend</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Common mistakes</p><ul class="form-cue-list form-mistake-list"><li>Bench too steep — becomes a shoulder press</li><li>Elbows flaring to 90° — shoulder strain risk</li><li>Rushing the descent</li><li>Not reaching full range at the bottom</li></ul></div>
+            </div>
+          </div>
+        </div>
         <div class="ex-tracker">
           <label class="tracker-label">My current weight</label>
           <div class="tracker-inputs">
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="push-2-weight" placeholder="0" min="0" step="2.5" />
-              <span class="tracker-unit">kg</span>
-            </div>
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="push-2-reps" placeholder="0" min="0" max="20" />
-              <span class="tracker-unit">reps</span>
-            </div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="push-2-weight" placeholder="0" min="0" step="2.5" /><span class="tracker-unit">kg</span></div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="push-2-reps" placeholder="0" min="0" max="20" /><span class="tracker-unit">reps</span></div>
           </div>
           <button class="save-btn" onclick="saveExercise('push-2')">Save</button>
           <span class="save-confirm" id="push-2-confirm">Saved ✓</span>
@@ -124,29 +118,27 @@
             <span class="ex-num ex-num--push">3</span>
             <div>
               <h3 class="ex-name">Arnold press</h3>
-              <div class="ex-muscles">
-                <span class="muscle-tag">all 3 delt heads</span>
-                <span class="muscle-tag">tricep</span>
-              </div>
+              <div class="ex-muscles"><span class="muscle-tag">all 3 delt heads</span><span class="muscle-tag">tricep</span></div>
             </div>
           </div>
-          <div class="ex-sets-info">
-            <span class="ex-sets">4 × 8–10</span>
-            <span class="ex-rest">Rest 2 min</span>
-          </div>
+          <div class="ex-sets-info"><span class="ex-sets">4 × 8–10</span><span class="ex-rest">Rest 2 min</span></div>
         </div>
         <p class="ex-tip">Start with palms facing you, rotate outward as you press overhead. The rotation hits all three shoulder heads in one movement.</p>
+        <div class="form-guide">
+          <button class="form-toggle" id="btn-push-3" onclick="toggleForm('push-3')"><span class="arrow">▶</span> Form guide</button>
+          <div class="form-details" id="form-push-3">
+            <div class="form-grid">
+              <div class="form-col"><p class="form-col-label">Setup</p><ul class="form-cue-list"><li>Sit upright, back supported, core braced</li><li>Start with palms facing you at chin height</li><li>Elbows roughly at 90°</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Execution cues</p><ul class="form-cue-list"><li>Rotate palms outward as you press overhead</li><li>Palms fully facing forward at the top</li><li>Reverse the rotation on the way down</li><li>Control the tempo — don't rush the rotation</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Common mistakes</p><ul class="form-cue-list form-mistake-list"><li>Skipping the rotation — becomes a standard press</li><li>Leaning back excessively under load</li><li>Letting the core go slack at the top</li></ul></div>
+            </div>
+          </div>
+        </div>
         <div class="ex-tracker">
           <label class="tracker-label">My current weight</label>
           <div class="tracker-inputs">
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="push-3-weight" placeholder="0" min="0" step="2.5" />
-              <span class="tracker-unit">kg</span>
-            </div>
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="push-3-reps" placeholder="0" min="0" max="20" />
-              <span class="tracker-unit">reps</span>
-            </div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="push-3-weight" placeholder="0" min="0" step="2.5" /><span class="tracker-unit">kg</span></div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="push-3-reps" placeholder="0" min="0" max="20" /><span class="tracker-unit">reps</span></div>
           </div>
           <button class="save-btn" onclick="saveExercise('push-3')">Save</button>
           <span class="save-confirm" id="push-3-confirm">Saved ✓</span>
@@ -159,28 +151,27 @@
             <span class="ex-num ex-num--push">4</span>
             <div>
               <h3 class="ex-name">Lateral raises</h3>
-              <div class="ex-muscles">
-                <span class="muscle-tag">side delt</span>
-              </div>
+              <div class="ex-muscles"><span class="muscle-tag">side delt</span></div>
             </div>
           </div>
-          <div class="ex-sets-info">
-            <span class="ex-sets">3 × 12–15</span>
-            <span class="ex-rest">Rest 60 sec</span>
-          </div>
+          <div class="ex-sets-info"><span class="ex-sets">3 × 12–15</span><span class="ex-rest">Rest 60 sec</span></div>
         </div>
         <p class="ex-tip">Slight forward lean, lead with your elbows not your hands. Control the descent slowly — 2–3 seconds down for maximum delt stimulus.</p>
+        <div class="form-guide">
+          <button class="form-toggle" id="btn-push-4" onclick="toggleForm('push-4')"><span class="arrow">▶</span> Form guide</button>
+          <div class="form-details" id="form-push-4">
+            <div class="form-grid">
+              <div class="form-col"><p class="form-col-label">Setup</p><ul class="form-cue-list"><li>Stand with slight forward lean at the hips</li><li>Slight bend in elbows throughout</li><li>Palms facing down, dumbbells at sides</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Execution cues</p><ul class="form-cue-list"><li>Lead with elbows, not hands</li><li>Raise to just above shoulder height</li><li>Think about pouring water from a jug at the top</li><li>Lower over 2–3 seconds — don't drop</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Common mistakes</p><ul class="form-cue-list form-mistake-list"><li>Using momentum to swing the weights up</li><li>Shrugging the traps at the top</li><li>Going too heavy — ruins the movement</li><li>Dropping the weight on the way down</li></ul></div>
+            </div>
+          </div>
+        </div>
         <div class="ex-tracker">
           <label class="tracker-label">My current weight</label>
           <div class="tracker-inputs">
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="push-4-weight" placeholder="0" min="0" step="2.5" />
-              <span class="tracker-unit">kg</span>
-            </div>
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="push-4-reps" placeholder="0" min="0" max="20" />
-              <span class="tracker-unit">reps</span>
-            </div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="push-4-weight" placeholder="0" min="0" step="2.5" /><span class="tracker-unit">kg</span></div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="push-4-reps" placeholder="0" min="0" max="20" /><span class="tracker-unit">reps</span></div>
           </div>
           <button class="save-btn" onclick="saveExercise('push-4')">Save</button>
           <span class="save-confirm" id="push-4-confirm">Saved ✓</span>
@@ -193,28 +184,27 @@
             <span class="ex-num ex-num--push">5</span>
             <div>
               <h3 class="ex-name">Cable fly or pec deck</h3>
-              <div class="ex-muscles">
-                <span class="muscle-tag">chest</span>
-              </div>
+              <div class="ex-muscles"><span class="muscle-tag">chest</span></div>
             </div>
           </div>
-          <div class="ex-sets-info">
-            <span class="ex-sets">3 × 12–15</span>
-            <span class="ex-rest">Rest 60 sec</span>
-          </div>
+          <div class="ex-sets-info"><span class="ex-sets">3 × 12–15</span><span class="ex-rest">Rest 60 sec</span></div>
         </div>
         <p class="ex-tip">Keep a slight bend in elbows throughout. Squeeze hard at the point of peak contraction — pause for 1 second. Pure chest isolation.</p>
+        <div class="form-guide">
+          <button class="form-toggle" id="btn-push-5" onclick="toggleForm('push-5')"><span class="arrow">▶</span> Form guide</button>
+          <div class="form-details" id="form-push-5">
+            <div class="form-grid">
+              <div class="form-col"><p class="form-col-label">Setup</p><ul class="form-cue-list"><li>Set cables at chest height or sit upright (pec deck)</li><li>Slight fixed bend in elbows — don't change this</li><li>Chest up, shoulder blades back</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Execution cues</p><ul class="form-cue-list"><li>Think about hugging a tree — arc the arms</li><li>Squeeze hard at the point of peak contraction</li><li>Pause for 1 second at the peak</li><li>Control the return — feel the stretch</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Common mistakes</p><ul class="form-cue-list form-mistake-list"><li>Bending and straightening elbows — not a press</li><li>Going too heavy — ruins the arc motion</li><li>Not pausing at contraction</li></ul></div>
+            </div>
+          </div>
+        </div>
         <div class="ex-tracker">
           <label class="tracker-label">My current weight</label>
           <div class="tracker-inputs">
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="push-5-weight" placeholder="0" min="0" step="2.5" />
-              <span class="tracker-unit">kg</span>
-            </div>
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="push-5-reps" placeholder="0" min="0" max="20" />
-              <span class="tracker-unit">reps</span>
-            </div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="push-5-weight" placeholder="0" min="0" step="2.5" /><span class="tracker-unit">kg</span></div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="push-5-reps" placeholder="0" min="0" max="20" /><span class="tracker-unit">reps</span></div>
           </div>
           <button class="save-btn" onclick="saveExercise('push-5')">Save</button>
           <span class="save-confirm" id="push-5-confirm">Saved ✓</span>
@@ -227,28 +217,27 @@
             <span class="ex-num ex-num--push">6</span>
             <div>
               <h3 class="ex-name">Tricep rope pushdown</h3>
-              <div class="ex-muscles">
-                <span class="muscle-tag">tricep</span>
-              </div>
+              <div class="ex-muscles"><span class="muscle-tag">tricep</span></div>
             </div>
           </div>
-          <div class="ex-sets-info">
-            <span class="ex-sets">3 × 12–15</span>
-            <span class="ex-rest">Rest 60 sec</span>
-          </div>
+          <div class="ex-sets-info"><span class="ex-sets">3 × 12–15</span><span class="ex-rest">Rest 60 sec</span></div>
         </div>
         <p class="ex-tip">Elbows pinned to sides throughout. Spread the rope apart at the bottom of the movement and fully extend. Don't let elbows flare.</p>
+        <div class="form-guide">
+          <button class="form-toggle" id="btn-push-6" onclick="toggleForm('push-6')"><span class="arrow">▶</span> Form guide</button>
+          <div class="form-details" id="form-push-6">
+            <div class="form-grid">
+              <div class="form-col"><p class="form-col-label">Setup</p><ul class="form-cue-list"><li>Set cable to high position</li><li>Stand close to the cable, slight forward lean</li><li>Elbows pinned to sides — they don't move</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Execution cues</p><ul class="form-cue-list"><li>Push down and spread the rope apart at the bottom</li><li>Fully extend the arms at the bottom</li><li>Control the return to about 90°</li><li>Only the forearms should move</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Common mistakes</p><ul class="form-cue-list form-mistake-list"><li>Elbows flaring out during the rep</li><li>Using bodyweight to push down</li><li>Not fully extending at the bottom</li></ul></div>
+            </div>
+          </div>
+        </div>
         <div class="ex-tracker">
           <label class="tracker-label">My current weight</label>
           <div class="tracker-inputs">
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="push-6-weight" placeholder="0" min="0" step="2.5" />
-              <span class="tracker-unit">kg</span>
-            </div>
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="push-6-reps" placeholder="0" min="0" max="20" />
-              <span class="tracker-unit">reps</span>
-            </div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="push-6-weight" placeholder="0" min="0" step="2.5" /><span class="tracker-unit">kg</span></div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="push-6-reps" placeholder="0" min="0" max="20" /><span class="tracker-unit">reps</span></div>
           </div>
           <button class="save-btn" onclick="saveExercise('push-6')">Save</button>
           <span class="save-confirm" id="push-6-confirm">Saved ✓</span>
@@ -261,28 +250,27 @@
             <span class="ex-num ex-num--push">7</span>
             <div>
               <h3 class="ex-name">Overhead tricep extension</h3>
-              <div class="ex-muscles">
-                <span class="muscle-tag">tricep long head</span>
-              </div>
+              <div class="ex-muscles"><span class="muscle-tag">tricep long head</span></div>
             </div>
           </div>
-          <div class="ex-sets-info">
-            <span class="ex-sets">3 × 10–12</span>
-            <span class="ex-rest">Rest 60 sec</span>
-          </div>
+          <div class="ex-sets-info"><span class="ex-sets">3 × 10–12</span><span class="ex-rest">Rest 60 sec</span></div>
         </div>
         <p class="ex-tip">Keep elbows pointing forward, lower the dumbbell slowly behind your head. The stretch on the long head is key — don't rush the eccentric.</p>
+        <div class="form-guide">
+          <button class="form-toggle" id="btn-push-7" onclick="toggleForm('push-7')"><span class="arrow">▶</span> Form guide</button>
+          <div class="form-details" id="form-push-7">
+            <div class="form-grid">
+              <div class="form-col"><p class="form-col-label">Setup</p><ul class="form-cue-list"><li>Sit or stand with core braced</li><li>Hold dumbbell overhead with both hands</li><li>Elbows pointing forward — not flared</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Execution cues</p><ul class="form-cue-list"><li>Lower dumbbell behind head slowly — 3 seconds</li><li>Feel the stretch in the tricep long head</li><li>Press back up to full extension overhead</li><li>Keep elbows pointing forward throughout</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Common mistakes</p><ul class="form-cue-list form-mistake-list"><li>Elbows flaring wide — loses long head tension</li><li>Rushing the eccentric — the stretch is the point</li><li>Arching the lower back excessively</li></ul></div>
+            </div>
+          </div>
+        </div>
         <div class="ex-tracker">
           <label class="tracker-label">My current weight</label>
           <div class="tracker-inputs">
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="push-7-weight" placeholder="0" min="0" step="2.5" />
-              <span class="tracker-unit">kg</span>
-            </div>
-            <div class="tracker-field">
-              <input type="number" class="tracker-input" id="push-7-reps" placeholder="0" min="0" max="20" />
-              <span class="tracker-unit">reps</span>
-            </div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="push-7-weight" placeholder="0" min="0" step="2.5" /><span class="tracker-unit">kg</span></div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="push-7-reps" placeholder="0" min="0" max="20" /><span class="tracker-unit">reps</span></div>
           </div>
           <button class="save-btn" onclick="saveExercise('push-7')">Save</button>
           <span class="save-confirm" id="push-7-confirm">Saved ✓</span>
@@ -295,13 +283,9 @@
       <a href="index.html" class="wn-btn wn-btn--secondary">← Overview</a>
       <a href="pull.html" class="wn-btn wn-btn--pull">Pull day →</a>
     </div>
-
   </main>
 
-  <footer class="footer">
-    <p>Built for May 2027 · Track your lifts, hit your macros, trust the process.</p>
-  </footer>
-
+  <footer class="footer"><p>Built for May 2027 · Track your lifts, hit your macros, trust the process.</p></footer>
   <script src="script.js"></script>
 </body>
 </html>

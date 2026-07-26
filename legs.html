@@ -41,11 +41,12 @@
 
   <main class="main">
     <div class="workout-intro">
-      <p>The biggest session of the week. Lead with hack squat or leg press while your legs are completely fresh, then hammer the hamstrings from two angles. Don't skip calves. Tap "Form guide" on any exercise for cues and common mistakes.</p>
+      <p>Heavy compound movements first, then isolation. Hack squat and goblet squat lead the session while legs are completely fresh. Hamstring and calf isolation work comes at the end. Tap "Form guide" for cues and common mistakes.</p>
     </div>
 
     <div class="exercise-list">
 
+      <!-- 1. Hack squat / leg press — heavy compound -->
       <div class="exercise">
         <div class="exercise-header">
           <div class="ex-left">
@@ -57,14 +58,14 @@
           </div>
           <div class="ex-sets-info"><span class="ex-sets">4 × 8–10</span><span class="ex-rest">Rest 2–3 min</span></div>
         </div>
-        <p class="ex-tip">Feet low and narrow on the platform for maximum quad focus. Control the descent — don't let the weight drop. Full depth if your mobility allows.</p>
+        <p class="ex-tip">Your primary compound — do this first while your legs are completely fresh. Feet low and narrow for quad focus, control the descent, don't let the weight drop.</p>
         <div class="form-guide">
           <button class="form-toggle" id="btn-legs-1" onclick="toggleForm('legs-1')"><span class="arrow">▶</span> Form guide</button>
           <div class="form-details" id="form-legs-1">
             <div class="form-grid">
               <div class="form-col"><p class="form-col-label">Setup</p><ul class="form-cue-list"><li>Feet low and narrow for quad focus</li><li>Back flat against the pad</li><li>Unlock safety handles before lowering</li><li>Toes slightly pointed out — 15–30°</li></ul></div>
               <div class="form-col"><p class="form-col-label">Execution cues</p><ul class="form-cue-list"><li>Lower slowly — 3 seconds down</li><li>Aim for thighs parallel or below</li><li>Drive through the full foot on the way up</li><li>Don't lock knees fully at the top</li></ul></div>
-              <div class="form-col"><p class="form-col-label">Common mistakes</p><ul class="form-cue-list form-mistake-list"><li>Knees caving inward — push them out</li><li>Lower back peeling off the pad</li><li>Cutting depth short</li><li>Locking safeties before completing the set</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Common mistakes</p><ul class="form-cue-list form-mistake-list"><li>Knees caving inward — push them out</li><li>Lower back peeling off the pad</li><li>Cutting depth short</li><li>Dropping the weight too fast</li></ul></div>
             </div>
           </div>
         </div>
@@ -79,25 +80,26 @@
         </div>
       </div>
 
+      <!-- 2. Goblet squat — compound -->
       <div class="exercise">
         <div class="exercise-header">
           <div class="ex-left">
             <span class="ex-num ex-num--legs">2</span>
             <div>
-              <h3 class="ex-name">Lying leg curl</h3>
-              <div class="ex-muscles"><span class="muscle-tag">hamstrings</span></div>
+              <h3 class="ex-name">Goblet squat</h3>
+              <div class="ex-muscles"><span class="muscle-tag">quads</span><span class="muscle-tag">glutes</span><span class="muscle-tag">core</span></div>
             </div>
           </div>
-          <div class="ex-sets-info"><span class="ex-sets">4 × 10–12</span><span class="ex-rest">Rest 90 sec</span></div>
+          <div class="ex-sets-info"><span class="ex-sets">3 × 10–12</span><span class="ex-rest">Rest 90 sec</span></div>
         </div>
-        <p class="ex-tip">Curl heels to glutes, squeeze at the top, then lower slowly over 3 seconds. The eccentric is where most hamstring growth happens — don't rush it.</p>
+        <p class="ex-tip">Second compound — the dumbbell held at your chest acts as a counterbalance, helping you sit deeper and stay more upright than most squat variations. Excellent for quad development and squat mechanics.</p>
         <div class="form-guide">
           <button class="form-toggle" id="btn-legs-2" onclick="toggleForm('legs-2')"><span class="arrow">▶</span> Form guide</button>
           <div class="form-details" id="form-legs-2">
             <div class="form-grid">
-              <div class="form-col"><p class="form-col-label">Setup</p><ul class="form-cue-list"><li>Adjust pad so it sits just above the heels</li><li>Lie face down, hips flat on the bench</li><li>Hold handles lightly for stability</li></ul></div>
-              <div class="form-col"><p class="form-col-label">Execution cues</p><ul class="form-cue-list"><li>Curl heels toward glutes smoothly</li><li>Squeeze hard at the top — pause 1 second</li><li>Lower over 3 seconds — don't let it drop</li><li>Hips stay flat — don't lift them to assist</li></ul></div>
-              <div class="form-col"><p class="form-col-label">Common mistakes</p><ul class="form-cue-list form-mistake-list"><li>Hips rising off the bench to help the curl</li><li>Dropping the weight quickly on descent</li><li>Pad positioned too high or too low</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Setup</p><ul class="form-cue-list"><li>Hold dumbbell vertically at chest height with both hands</li><li>Feet shoulder-width apart, toes slightly out</li><li>Chest up, core braced throughout</li><li>Elbows pointing down inside the knees</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Execution cues</p><ul class="form-cue-list"><li>Sit down between your heels — not forward</li><li>Keep chest up and torso as upright as possible</li><li>Drive knees out in line with toes</li><li>Push through the full foot to stand</li><li>Squeeze glutes at the top</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Common mistakes</p><ul class="form-cue-list form-mistake-list"><li>Chest dropping forward — counterbalance should prevent this</li><li>Knees caving inward — actively push them out</li><li>Not going deep enough — aim for below parallel</li><li>Rising onto toes — keep heels flat</li></ul></div>
             </div>
           </div>
         </div>
@@ -112,25 +114,26 @@
         </div>
       </div>
 
+      <!-- 3. Lying leg curl — hamstring isolation -->
       <div class="exercise">
         <div class="exercise-header">
           <div class="ex-left">
             <span class="ex-num ex-num--legs">3</span>
             <div>
-              <h3 class="ex-name">Leg extension</h3>
-              <div class="ex-muscles"><span class="muscle-tag">quads</span></div>
+              <h3 class="ex-name">Lying leg curl</h3>
+              <div class="ex-muscles"><span class="muscle-tag">hamstrings</span></div>
             </div>
           </div>
-          <div class="ex-sets-info"><span class="ex-sets">3 × 12–15</span><span class="ex-rest">Rest 60 sec</span></div>
+          <div class="ex-sets-info"><span class="ex-sets">4 × 10–12</span><span class="ex-rest">Rest 90 sec</span></div>
         </div>
-        <p class="ex-tip">Pause and squeeze at the top for 1 second on every rep. Pure quad isolation — you should feel a strong burn by rep 12. Control the weight on the way down.</p>
+        <p class="ex-tip">First isolation — hamstrings only. Done after the squatting compounds so your quads have been worked hard and the focus shifts entirely to the back of the leg. Slow eccentric is key.</p>
         <div class="form-guide">
           <button class="form-toggle" id="btn-legs-3" onclick="toggleForm('legs-3')"><span class="arrow">▶</span> Form guide</button>
           <div class="form-details" id="form-legs-3">
             <div class="form-grid">
-              <div class="form-col"><p class="form-col-label">Setup</p><ul class="form-cue-list"><li>Adjust seat so knees are at the edge of the seat</li><li>Pad rests on lower shin, just above ankles</li><li>Sit upright, grip handles</li></ul></div>
-              <div class="form-col"><p class="form-col-label">Execution cues</p><ul class="form-cue-list"><li>Extend fully — squeeze quads hard at the top</li><li>Pause for 1 second at full extension</li><li>Lower slowly — 2–3 seconds</li><li>Don't let the stack touch between reps</li></ul></div>
-              <div class="form-col"><p class="form-col-label">Common mistakes</p><ul class="form-cue-list form-mistake-list"><li>Not reaching full extension at the top</li><li>Swinging or using momentum</li><li>Seat adjusted too far back — knee stress</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Setup</p><ul class="form-cue-list"><li>Adjust pad so it sits just above the heels</li><li>Lie face down, hips flat on the bench</li><li>Hold handles lightly for stability</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Execution cues</p><ul class="form-cue-list"><li>Curl heels toward glutes smoothly</li><li>Squeeze hard at the top — pause 1 second</li><li>Lower over 3 seconds — don't let it drop</li><li>Hips stay flat — don't lift them to assist</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Common mistakes</p><ul class="form-cue-list form-mistake-list"><li>Hips rising off the bench to help the curl</li><li>Dropping the weight quickly on descent</li><li>Pad positioned too high or too low</li></ul></div>
             </div>
           </div>
         </div>
@@ -145,25 +148,26 @@
         </div>
       </div>
 
+      <!-- 4. Leg extension — quad isolation -->
       <div class="exercise">
         <div class="exercise-header">
           <div class="ex-left">
             <span class="ex-num ex-num--legs">4</span>
             <div>
-              <h3 class="ex-name">Seated leg curl</h3>
-              <div class="ex-muscles"><span class="muscle-tag">hamstrings</span></div>
+              <h3 class="ex-name">Leg extension</h3>
+              <div class="ex-muscles"><span class="muscle-tag">quads</span></div>
             </div>
           </div>
           <div class="ex-sets-info"><span class="ex-sets">3 × 12–15</span><span class="ex-rest">Rest 60 sec</span></div>
         </div>
-        <p class="ex-tip">The seated position stretches the hamstring at a different angle to the lying curl — pairing both in the same session gives more complete hamstring development.</p>
+        <p class="ex-tip">Quad isolation — pure quad contraction with no glute or hamstring involvement. Pause and squeeze at the top for 1 second on every rep. You should feel a strong burn by rep 12.</p>
         <div class="form-guide">
           <button class="form-toggle" id="btn-legs-4" onclick="toggleForm('legs-4')"><span class="arrow">▶</span> Form guide</button>
           <div class="form-details" id="form-legs-4">
             <div class="form-grid">
-              <div class="form-col"><p class="form-col-label">Setup</p><ul class="form-cue-list"><li>Adjust back pad so knees sit just off the seat edge</li><li>Top pad rests on lower quads</li><li>Feet flexed, toes pointing up</li></ul></div>
-              <div class="form-col"><p class="form-col-label">Execution cues</p><ul class="form-cue-list"><li>Curl as far as the machine allows</li><li>Squeeze at full contraction</li><li>Lower slowly — 3 seconds</li><li>Feel the hamstring stretch on the return</li></ul></div>
-              <div class="form-col"><p class="form-col-label">Common mistakes</p><ul class="form-cue-list form-mistake-list"><li>Not curling through full range of motion</li><li>Lifting hips off the seat during the curl</li><li>Going too heavy — ruins control</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Setup</p><ul class="form-cue-list"><li>Adjust seat so knees are at the edge of the seat</li><li>Pad rests on lower shin, just above ankles</li><li>Sit upright, grip handles</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Execution cues</p><ul class="form-cue-list"><li>Extend fully — squeeze quads hard at the top</li><li>Pause for 1 second at full extension</li><li>Lower slowly — 2–3 seconds</li><li>Don't let the stack touch between reps</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Common mistakes</p><ul class="form-cue-list form-mistake-list"><li>Not reaching full extension at the top</li><li>Swinging or using momentum</li><li>Seat adjusted too far back — knee stress</li></ul></div>
             </div>
           </div>
         </div>
@@ -178,25 +182,26 @@
         </div>
       </div>
 
+      <!-- 5. Seated leg curl — hamstring isolation -->
       <div class="exercise">
         <div class="exercise-header">
           <div class="ex-left">
             <span class="ex-num ex-num--legs">5</span>
             <div>
-              <h3 class="ex-name">Walking lunges</h3>
-              <div class="ex-muscles"><span class="muscle-tag">quads</span><span class="muscle-tag">glutes</span><span class="muscle-tag">hamstrings</span></div>
+              <h3 class="ex-name">Seated leg curl</h3>
+              <div class="ex-muscles"><span class="muscle-tag">hamstrings</span></div>
             </div>
           </div>
-          <div class="ex-sets-info"><span class="ex-sets">3 × 10/leg</span><span class="ex-rest">Rest 90 sec</span></div>
+          <div class="ex-sets-info"><span class="ex-sets">3 × 12–15</span><span class="ex-rest">Rest 60 sec</span></div>
         </div>
-        <p class="ex-tip">Keep torso upright throughout. Knee tracks over your second toe — don't let it cave inward. Full stride length activates more glute. Use dumbbells to add load.</p>
+        <p class="ex-tip">Second hamstring isolation — seated position stretches the hamstring at a different angle to the lying curl. Pairing both variations gives more complete hamstring development.</p>
         <div class="form-guide">
           <button class="form-toggle" id="btn-legs-5" onclick="toggleForm('legs-5')"><span class="arrow">▶</span> Form guide</button>
           <div class="form-details" id="form-legs-5">
             <div class="form-grid">
-              <div class="form-col"><p class="form-col-label">Setup</p><ul class="form-cue-list"><li>Stand tall, core braced</li><li>Dumbbells at sides if adding load</li><li>Take a long stride forward</li></ul></div>
-              <div class="form-col"><p class="form-col-label">Execution cues</p><ul class="form-cue-list"><li>Keep torso upright — don't lean forward</li><li>Front knee tracks over second toe</li><li>Lower back knee toward floor — 1–2 inches off</li><li>Drive through front heel to step forward</li></ul></div>
-              <div class="form-col"><p class="form-col-label">Common mistakes</p><ul class="form-cue-list form-mistake-list"><li>Front knee caving inward</li><li>Torso leaning too far forward</li><li>Short stride — limits glute activation</li><li>Back knee slamming the floor</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Setup</p><ul class="form-cue-list"><li>Adjust back pad so knees sit just off the seat edge</li><li>Top pad rests on lower quads</li><li>Feet flexed, toes pointing up</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Execution cues</p><ul class="form-cue-list"><li>Curl as far as the machine allows</li><li>Squeeze at full contraction</li><li>Lower slowly — 3 seconds</li><li>Feel the hamstring stretch on the return</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Common mistakes</p><ul class="form-cue-list form-mistake-list"><li>Not curling through full range of motion</li><li>Lifting hips off the seat during the curl</li><li>Going too heavy — ruins control</li></ul></div>
             </div>
           </div>
         </div>
@@ -204,13 +209,14 @@
           <label class="tracker-label">My current weight</label>
           <div class="tracker-inputs">
             <div class="tracker-field"><input type="number" class="tracker-input" id="legs-5-weight" placeholder="0" min="0" step="2.5" /><span class="tracker-unit">kg</span></div>
-            <div class="tracker-field"><input type="number" class="tracker-input" id="legs-5-reps" placeholder="0" min="0" max="30" /><span class="tracker-unit">reps</span></div>
+            <div class="tracker-field"><input type="number" class="tracker-input" id="legs-5-reps" placeholder="0" min="0" max="20" /><span class="tracker-unit">reps</span></div>
           </div>
           <button class="save-btn save-btn--legs" onclick="saveExercise('legs-5')">Save</button>
           <span class="save-confirm" id="legs-5-confirm">Saved ✓</span>
         </div>
       </div>
 
+      <!-- 6. Standing calf raises — isolation finisher -->
       <div class="exercise">
         <div class="exercise-header">
           <div class="ex-left">
@@ -222,7 +228,7 @@
           </div>
           <div class="ex-sets-info"><span class="ex-sets">4 × 15–20</span><span class="ex-rest">Rest 60 sec</span></div>
         </div>
-        <p class="ex-tip">Full range of motion is essential — deep stretch at the bottom, hold the contraction at the top for 1 second. Calves respond to volume, so don't rush through these.</p>
+        <p class="ex-tip">Finisher — calves last as they don't affect any other exercise. Full range is essential — deep stretch at the bottom, hold the contraction at the top for 1 second. Don't rush these.</p>
         <div class="form-guide">
           <button class="form-toggle" id="btn-legs-6" onclick="toggleForm('legs-6')"><span class="arrow">▶</span> Form guide</button>
           <div class="form-details" id="form-legs-6">
@@ -245,13 +251,11 @@
       </div>
 
     </div>
-
     <div class="workout-nav">
       <a href="pull.html" class="wn-btn wn-btn--secondary">← Pull day</a>
       <a href="nutrition.html" class="wn-btn wn-btn--primary">Nutrition →</a>
     </div>
   </main>
-
   <footer class="footer"><p>Built for May 2027 · Track your lifts, hit your macros, trust the process.</p></footer>
   <script src="script.js"></script>
 </body>

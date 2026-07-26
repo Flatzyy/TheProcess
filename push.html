@@ -41,11 +41,12 @@
 
   <main class="main">
     <div class="workout-intro">
-      <p>Start with the two heavy compound movements while you're fresh, then move into isolation work. Rest times matter — use them fully on the big lifts. Tap "Form guide" on any exercise to see setup cues and common mistakes.</p>
+      <p>Compound movements first while you're fresh, isolation work at the end. This order ensures maximum strength on your big lifts. Tap "Form guide" on any exercise for setup cues and common mistakes.</p>
     </div>
 
     <div class="exercise-list">
 
+      <!-- 1. Barbell bench press — heavy compound -->
       <div class="exercise">
         <div class="exercise-header">
           <div class="ex-left">
@@ -57,12 +58,12 @@
           </div>
           <div class="ex-sets-info"><span class="ex-sets">4 × 6–8</span><span class="ex-rest">Rest 2–3 min</span></div>
         </div>
-        <p class="ex-tip">Retract your shoulder blades and drive your feet into the floor. Lower the bar to your lower chest, touch lightly, and press up and back. Your primary compound lift — load it progressively every week.</p>
+        <p class="ex-tip">Your heaviest compound lift — do this first while completely fresh. Retract shoulder blades, feet into the floor, lower bar to lower chest and press up and back.</p>
         <div class="form-guide">
           <button class="form-toggle" id="btn-push-1" onclick="toggleForm('push-1')"><span class="arrow">▶</span> Form guide</button>
           <div class="form-details" id="form-push-1">
             <div class="form-grid">
-              <div class="form-col"><p class="form-col-label">Setup</p><ul class="form-cue-list"><li>Feet flat on floor, drive them into the ground</li><li>Retract and depress shoulder blades — create a stable base</li><li>Slight arch in lower back, chest up</li><li>Grip just wider than shoulder-width</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Setup</p><ul class="form-cue-list"><li>Feet flat on floor, drive them into the ground</li><li>Retract and depress shoulder blades</li><li>Slight arch in lower back, chest up</li><li>Grip just wider than shoulder-width</li></ul></div>
               <div class="form-col"><p class="form-col-label">Execution cues</p><ul class="form-cue-list"><li>Lower bar to lower chest in a slight diagonal path</li><li>Lightly touch chest — don't bounce</li><li>Drive feet into floor as you press up</li><li>Press bar back and slightly toward your face</li><li>Lock out fully at the top</li></ul></div>
               <div class="form-col"><p class="form-col-label">Common mistakes</p><ul class="form-cue-list form-mistake-list"><li>Elbows flaring to 90° — keep at 45°</li><li>Bouncing the bar off the chest</li><li>Feet coming off the floor mid-rep</li><li>Losing shoulder blade retraction under load</li></ul></div>
             </div>
@@ -79,18 +80,19 @@
         </div>
       </div>
 
+      <!-- 2. Incline dumbbell press — compound -->
       <div class="exercise">
         <div class="exercise-header">
           <div class="ex-left">
             <span class="ex-num ex-num--push">2</span>
             <div>
               <h3 class="ex-name">Incline dumbbell press</h3>
-              <div class="ex-muscles"><span class="muscle-tag">upper chest</span><span class="muscle-tag">front delt</span></div>
+              <div class="ex-muscles"><span class="muscle-tag">upper chest</span><span class="muscle-tag">front delt</span><span class="muscle-tag">tricep</span></div>
             </div>
           </div>
           <div class="ex-sets-info"><span class="ex-sets">3 × 8–10</span><span class="ex-rest">Rest 90 sec</span></div>
         </div>
-        <p class="ex-tip">Set bench to 30–45°. Keep elbows at 45° from your torso — this protects the shoulder and keeps tension on the upper chest.</p>
+        <p class="ex-tip">Second compound movement — targets the upper chest which bench press underworks. Set bench to 30–45°, keep elbows at 45° from torso throughout.</p>
         <div class="form-guide">
           <button class="form-toggle" id="btn-push-2" onclick="toggleForm('push-2')"><span class="arrow">▶</span> Form guide</button>
           <div class="form-details" id="form-push-2">
@@ -112,6 +114,7 @@
         </div>
       </div>
 
+      <!-- 3. Arnold press — compound shoulder -->
       <div class="exercise">
         <div class="exercise-header">
           <div class="ex-left">
@@ -123,7 +126,7 @@
           </div>
           <div class="ex-sets-info"><span class="ex-sets">4 × 8–10</span><span class="ex-rest">Rest 2 min</span></div>
         </div>
-        <p class="ex-tip">Start with palms facing you, rotate outward as you press overhead. The rotation hits all three shoulder heads in one movement.</p>
+        <p class="ex-tip">Third compound — hits all three shoulder heads through the rotation. Done before isolation work while your shoulders still have full strength.</p>
         <div class="form-guide">
           <button class="form-toggle" id="btn-push-3" onclick="toggleForm('push-3')"><span class="arrow">▶</span> Form guide</button>
           <div class="form-details" id="form-push-3">
@@ -145,25 +148,26 @@
         </div>
       </div>
 
+      <!-- 4. Cable fly — chest isolation -->
       <div class="exercise">
         <div class="exercise-header">
           <div class="ex-left">
             <span class="ex-num ex-num--push">4</span>
             <div>
-              <h3 class="ex-name">Lateral raises</h3>
-              <div class="ex-muscles"><span class="muscle-tag">side delt</span></div>
+              <h3 class="ex-name">Cable fly or pec deck</h3>
+              <div class="ex-muscles"><span class="muscle-tag">chest</span></div>
             </div>
           </div>
           <div class="ex-sets-info"><span class="ex-sets">3 × 12–15</span><span class="ex-rest">Rest 60 sec</span></div>
         </div>
-        <p class="ex-tip">Slight forward lean, lead with your elbows not your hands. Control the descent slowly — 2–3 seconds down for maximum delt stimulus.</p>
+        <p class="ex-tip">First isolation — chest only, no tricep involvement. Squeeze hard at peak contraction and pause for 1 second. Higher reps now that you're into isolation work.</p>
         <div class="form-guide">
           <button class="form-toggle" id="btn-push-4" onclick="toggleForm('push-4')"><span class="arrow">▶</span> Form guide</button>
           <div class="form-details" id="form-push-4">
             <div class="form-grid">
-              <div class="form-col"><p class="form-col-label">Setup</p><ul class="form-cue-list"><li>Stand with slight forward lean at the hips</li><li>Slight bend in elbows throughout</li><li>Palms facing down, dumbbells at sides</li></ul></div>
-              <div class="form-col"><p class="form-col-label">Execution cues</p><ul class="form-cue-list"><li>Lead with elbows, not hands</li><li>Raise to just above shoulder height</li><li>Think about pouring water from a jug at the top</li><li>Lower over 2–3 seconds — don't drop</li></ul></div>
-              <div class="form-col"><p class="form-col-label">Common mistakes</p><ul class="form-cue-list form-mistake-list"><li>Using momentum to swing the weights up</li><li>Shrugging the traps at the top</li><li>Going too heavy — ruins the movement</li><li>Dropping the weight on the way down</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Setup</p><ul class="form-cue-list"><li>Set cables at chest height or sit upright (pec deck)</li><li>Slight fixed bend in elbows throughout</li><li>Chest up, shoulder blades back</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Execution cues</p><ul class="form-cue-list"><li>Think about hugging a tree — arc the arms</li><li>Squeeze hard at the point of peak contraction</li><li>Pause for 1 second at the peak</li><li>Control the return — feel the stretch</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Common mistakes</p><ul class="form-cue-list form-mistake-list"><li>Bending and straightening elbows — not a press</li><li>Going too heavy — ruins the arc motion</li><li>Not pausing at contraction</li></ul></div>
             </div>
           </div>
         </div>
@@ -178,25 +182,26 @@
         </div>
       </div>
 
+      <!-- 5. Lateral raises — shoulder isolation -->
       <div class="exercise">
         <div class="exercise-header">
           <div class="ex-left">
             <span class="ex-num ex-num--push">5</span>
             <div>
-              <h3 class="ex-name">Cable fly or pec deck</h3>
-              <div class="ex-muscles"><span class="muscle-tag">chest</span></div>
+              <h3 class="ex-name">Lateral raises</h3>
+              <div class="ex-muscles"><span class="muscle-tag">side delt</span></div>
             </div>
           </div>
           <div class="ex-sets-info"><span class="ex-sets">3 × 12–15</span><span class="ex-rest">Rest 60 sec</span></div>
         </div>
-        <p class="ex-tip">Keep a slight bend in elbows throughout. Squeeze hard at the point of peak contraction — pause for 1 second. Pure chest isolation.</p>
+        <p class="ex-tip">Shoulder isolation — light weight, slow and controlled. Lead with elbows not hands, control the descent over 2–3 seconds for maximum side delt stimulus.</p>
         <div class="form-guide">
           <button class="form-toggle" id="btn-push-5" onclick="toggleForm('push-5')"><span class="arrow">▶</span> Form guide</button>
           <div class="form-details" id="form-push-5">
             <div class="form-grid">
-              <div class="form-col"><p class="form-col-label">Setup</p><ul class="form-cue-list"><li>Set cables at chest height or sit upright (pec deck)</li><li>Slight fixed bend in elbows — don't change this</li><li>Chest up, shoulder blades back</li></ul></div>
-              <div class="form-col"><p class="form-col-label">Execution cues</p><ul class="form-cue-list"><li>Think about hugging a tree — arc the arms</li><li>Squeeze hard at the point of peak contraction</li><li>Pause for 1 second at the peak</li><li>Control the return — feel the stretch</li></ul></div>
-              <div class="form-col"><p class="form-col-label">Common mistakes</p><ul class="form-cue-list form-mistake-list"><li>Bending and straightening elbows — not a press</li><li>Going too heavy — ruins the arc motion</li><li>Not pausing at contraction</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Setup</p><ul class="form-cue-list"><li>Stand with slight forward lean at the hips</li><li>Slight bend in elbows throughout</li><li>Palms facing down, dumbbells at sides</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Execution cues</p><ul class="form-cue-list"><li>Lead with elbows, not hands</li><li>Raise to just above shoulder height</li><li>Think about pouring water from a jug at the top</li><li>Lower over 2–3 seconds — don't drop</li></ul></div>
+              <div class="form-col"><p class="form-col-label">Common mistakes</p><ul class="form-cue-list form-mistake-list"><li>Using momentum to swing the weights up</li><li>Shrugging the traps at the top</li><li>Going too heavy — ruins the movement</li><li>Dropping the weight on the way down</li></ul></div>
             </div>
           </div>
         </div>
@@ -211,6 +216,7 @@
         </div>
       </div>
 
+      <!-- 6. Tricep rope pushdown — tricep isolation -->
       <div class="exercise">
         <div class="exercise-header">
           <div class="ex-left">
@@ -222,7 +228,7 @@
           </div>
           <div class="ex-sets-info"><span class="ex-sets">3 × 12–15</span><span class="ex-rest">Rest 60 sec</span></div>
         </div>
-        <p class="ex-tip">Elbows pinned to sides throughout. Spread the rope apart at the bottom of the movement and fully extend. Don't let elbows flare.</p>
+        <p class="ex-tip">Tricep isolation — elbows pinned to sides throughout. Spread the rope at the bottom and fully extend. Done after all pressing so triceps are pre-fatigued and isolation is maximised.</p>
         <div class="form-guide">
           <button class="form-toggle" id="btn-push-6" onclick="toggleForm('push-6')"><span class="arrow">▶</span> Form guide</button>
           <div class="form-details" id="form-push-6">
@@ -244,6 +250,7 @@
         </div>
       </div>
 
+      <!-- 7. Overhead tricep extension — tricep isolation -->
       <div class="exercise">
         <div class="exercise-header">
           <div class="ex-left">
@@ -255,7 +262,7 @@
           </div>
           <div class="ex-sets-info"><span class="ex-sets">3 × 10–12</span><span class="ex-rest">Rest 60 sec</span></div>
         </div>
-        <p class="ex-tip">Keep elbows pointing forward, lower the dumbbell slowly behind your head. The stretch on the long head is key — don't rush the eccentric.</p>
+        <p class="ex-tip">Finisher — targets the long head of the tricep which the pushdown underworks. Keep elbows pointing forward, lower slowly behind your head and feel the stretch before pressing back up.</p>
         <div class="form-guide">
           <button class="form-toggle" id="btn-push-7" onclick="toggleForm('push-7')"><span class="arrow">▶</span> Form guide</button>
           <div class="form-details" id="form-push-7">
@@ -278,13 +285,11 @@
       </div>
 
     </div>
-
     <div class="workout-nav">
       <a href="index.html" class="wn-btn wn-btn--secondary">← Overview</a>
       <a href="pull.html" class="wn-btn wn-btn--pull">Pull day →</a>
     </div>
   </main>
-
   <footer class="footer"><p>Built for May 2027 · Track your lifts, hit your macros, trust the process.</p></footer>
   <script src="script.js"></script>
 </body>
